@@ -10,7 +10,7 @@
 
   <header class="header">
 
-    <a href="index.html" class="header__logo" >
+    <a href="index.html" class="header__logo">
       <img class="header__logo-image" src="img/logo.svg" width="191" height="39" alt="Логотип cat energy">
     </a>
     <nav class="header__nav main-nav">
@@ -28,13 +28,14 @@
 
     <section class="catalog">
 
-      <h2 class="catalog__title">Каталог продукции</h2>
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <h2 class="visually-hidden">Основные товары</h2>
       <ul class="catalog__list product-list">
         <li class="product-list__item">
           <article class="product-list__item-content product">
             <a href="#" class="product__link">
               <img class="product__feed-image" src="img/feed-chicken--mini.png" width="140" height="144"
-                alt="Корм cat energy со вкусом курицы 500 грамм">
+                alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 500 грамм">
             </a>
             <div class="product__info-wrapper">
               <a href="#" class="product__link">
@@ -62,7 +63,7 @@
           <article class="product-list__item-content product">
             <a href="#" class="product__link">
               <img class="product__feed-image" src="img/feed-chicken.png" width="140" height="144"
-                alt="Корм cat energy со вкусом курицы 1000 грамм">
+                alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 1000 грамм">
             </a>
             <div class="product__info-wrapper">
               <a href="#" class="product__link">
@@ -90,7 +91,7 @@
           <article class="product-list__item-content product">
             <a href="#" class="product__link">
               <img class="product__feed-image" src="img/feed-fish--mini.png" width="140" height="144"
-                alt="Корм cat energy со вкусом рыбы 500 грамм">
+                alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 500 грамм">
             </a>
             <div class="product__info-wrapper">
               <a href="#" class="product__link">
@@ -118,7 +119,7 @@
           <article class="product-list__item-content product">
             <a href="#" class="product__link">
               <img class="product__feed-image" src="img/feed-fish.png" width="140" height="144"
-                alt="Корм cat energy со вкусом рыбы 1000 грамм">
+                alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 1000 грамм">
             </a>
             <div class="product__info-wrapper">
               <a href="#" class="product__link">
@@ -146,7 +147,7 @@
           <article class="product-list__item-content product">
             <a href="#" class="product__link">
               <img class="product__feed-image" src="img/feed-buckwheat--mini.png" width="140" height="144"
-                alt="Корм cat energy со вкусом гречкаи 500 грамм">
+                alt="Корм cat energy, синего цвета, со вкусом гречкаи - 500 грамм">
             </a>
             <div class="product__info-wrapper">
               <a href="#" class="product__link">
@@ -174,7 +175,7 @@
           <article class="product-list__item-content product">
             <a href="#" class="product__link">
               <img class="product__feed-image" src="img/feed-buckwheat.png" width="140" height="144"
-                alt="Корм cat energy со вкусом гречки 1000 грамм">
+                alt="Корм cat energy, синего цвета, со вкусом гречки - 1000 грамм">
             </a>
             <div class="product__info-wrapper">
               <a href="#" class="product__link">
@@ -202,7 +203,7 @@
           <article class="product-list__item-content product">
             <a href="#" class="product__link">
               <img class="product__feed-image" src="img/feed-rice--mini.png" width="140" height="144"
-                alt="Корм cat energy со вкусом рыбы 500 грамм">
+                alt="Корм cat energy, фиолетового цвета, со вкусом риса - 500 грамм">
             </a>
             <div class="product__info-wrapper">
               <a href="#" class="product__link">
@@ -231,10 +232,76 @@
             <img class="product__ico" src="img/plus-ico.svg" width="31" height="31" alt="Плюс">
             <h3 class="product__feed-title">Показать еще 100500 товаров</h3>
             <p class="product__text">На самом деле вкусов гораздо больше!</p>
-            <button type="button" class="product__btn main-btn">Показать все</button>
+            <a class="product__btn main-btn">Показать все</a>
           </article>
         </li>
       </ul>
+
+    </section>
+
+    <section class="аdditional-catalog">
+
+      <h2 class="аdditional-catalog__title">Дополнительные товары</h2>
+      <ul class="аdditional-catalog__list аdditional-list">
+        <li class="аdditional-list__item">
+          <article class="аdditional-list__item-content аdditional-product">
+            <h3 class="аdditional-product__title">Сахарозаменитель</h3>
+            <table class="аdditional-product__cost cost">
+              <tr>
+                <td class="cost__name">1 упаковка (100 г)</td>
+                <td class="cost__price">200 Р.</td>
+              </tr>
+            </table>
+            <a href="#" class="аdditional-product__btn main__btn">Заказать</a>
+          </article>
+        </li>
+        <li class="аdditional-list__item">
+          <article class="аdditional-list__item-content аdditional-product">
+            <h3 class="аdditional-product__title">Питьевая вода</h3>
+            <table class="аdditional-product__cost cost">
+              <tr>
+                <td class="cost__name">5 литров</td>
+                <td class="cost__price">50 Р.</td>
+              </tr>
+            </table>
+            <a href="#" class="аdditional-product__btn main__btn">Заказать</a>
+          </article>
+        </li>
+        <li class="аdditional-list__item">
+          <article class="аdditional-list__item-content аdditional-product">
+            <h3 class="аdditional-product__title">Молоко</h3>
+            <table class="аdditional-product__cost cost">
+              <tr>
+                <td class="cost__name">1 литр</td>
+                <td class="cost__price">100 Р.</td>
+              </tr>
+            </table>
+            <a href="#" class="аdditional-product__btn main__btn">Заказать</a>
+          </article>
+        </li>
+        <li class="аdditional-list__item">
+          <article class="аdditional-list__item-content аdditional-product">
+            <h3 class="аdditional-product__title">Витамины</h3>
+            <table class="аdditional-product__cost cost">
+              <tr>
+                <td class="cost__name">1 упаковка (30 г)</td>
+                <td class="cost__price">300 Р.</td>
+              </tr>
+            </table>
+            <a href="#" class="аdditional-product__btn main__btn">Заказать</a>
+          </article>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="special">
+
+      <h2 class="visually-hidden">Акция</h2>
+      <p class="special__text">
+        Закажите все
+        и получите чехол для кота в подарок!
+      </p>
 
     </section>
 
@@ -242,33 +309,52 @@
 
   <footer class="footer">
 
-    <a href="index.html" class="footer__logo">
-      <img class="footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип CAT ENERGY">
-    </a>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com" aria-label="Вконтакте">
-            <svg class="social__ico social__ico--vkontakte"></svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com" aria-label="Инстаграмм">
-            <svg class="social__ico social__ico--instagram"></svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
-            <svg class="social__ico social__ico--facebook"></svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <section class="contacts">
 
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__company-link company-link">
-      HTML Academy
-      <svg class="company-link__ico"></svg>
-    </a>
+      <div class="contacts__text-wrapper">
+        <p class="contacts__text">
+          приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <div class="contacts__map"></div>
+      <img src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map-image">
+
+    </section>
+
+    <section class="footer-links">
+
+      <a href="index.html" class="footer-links__logo">
+        <img class="footer-links__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип CAT ENERGY">
+      </a>
+      <div class="footer-links__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com" aria-label="Вконтакте">
+              <svg class="social__ico social__ico--vkontakte"></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com" aria-label="Инстаграмм">
+              <svg class="social__ico social__ico--instagram"></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
+              <svg class="social__ico social__ico--facebook"></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-links__company-link company-link">
+        HTML Academy
+        <svg class="company-link__ico"></svg>
+      </a>
+
+    </section>
 
   </footer>
 
