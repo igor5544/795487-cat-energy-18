@@ -1,4 +1,4 @@
-.social{
+.social {
   @include reset-list;
   padding-top: 19px;
   padding-bottom: 18px;
@@ -7,23 +7,23 @@
   margin-bottom: 31px;
 }
 
-.social__item{
+.social__item {
   width: 25px;
   height: 25px;
   background-color: black;
 }
 
-.social__ico--vkontakte{
+.social__ico--vkontakte {
   width: 22px;
   height: 12px;
 }
 
-.social__ico--instagram{
+.social__ico--instagram {
   width: 17px;
   height: 17px;
 }
 
-.social__ico--facebook{
+.social__ico--facebook {
   width: 10px;
   height: 19px;
 }
