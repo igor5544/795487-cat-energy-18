@@ -1,0 +1,19 @@
+.about-feed{
+  padding-top: 16px;
+  padding-bottom: 42px;
+}
+
+.about-feed__title{
+  margin-bottom: 35px;
+}
+
+.about-feed__list{
+  @include reset-list;
+}
+
+.about-feed__item{
+  padding-left: 80px;
+  + .about-feed__item{
+    margin-top: 20px;
+  }
+}

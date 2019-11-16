@@ -1,0 +1,57 @@
+@import "fonts.scss";
+@import "vars.scss";
+@import "mixins.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@import "blocks/container.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/main-btn.scss";
+@import "blocks/main-title.scss";
+@import "blocks/main-text.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+@import "blocks/banner.scss";
+@import "blocks/сategories.scss";
+@import "blocks/about-feed.scss";
+@import "blocks/result.scss";
+@import "blocks/contacts.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-list.scss";
+@import "blocks/product.scss";
+@import "blocks/feed-stats.scss";
+@import "blocks/аdditional-catalog.scss";
+@import "blocks/аdditional-list.scss";
+@import "blocks/аdditional-product.scss";
+@import "blocks/cost.scss";
+@import "blocks/special.scss";
+@import "blocks/cost.scss";
+@import "blocks/program.scss";
+@import "blocks/form.scss";
+
+@import "blocks/footer-links.scss";
+@import "blocks/social.scss";
+@import "blocks/company-link.scss";

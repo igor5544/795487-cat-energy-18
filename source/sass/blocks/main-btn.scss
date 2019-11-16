@@ -1,0 +1,16 @@
+.main-btn {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $main-color;
+}
+
+.main-btn--gray {
+  background-color: #f2f2f2;
+  color: #444444;
+}
