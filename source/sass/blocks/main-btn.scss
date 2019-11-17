@@ -8,9 +8,9 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: $main-color;
-}
 
-.main-btn--gray {
-  background-color: #f2f2f2;
-  color: #444444;
+  &--gray {
+    background-color: #f2f2f2;
+    color: #444444;
+  }
 }

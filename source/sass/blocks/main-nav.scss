@@ -3,10 +3,10 @@
   height: 19px;
   border: none;
   background: url("../../img/icon-mobile-menu.svg");
-}
 
-.main-nav__toggle--active {
-  width: 19px;
-  height: 19px;
-  background: url("../../img/icon-close.svg");
+  &--active {
+    width: 19px;
+    height: 19px;
+    background: url("../../img/icon-close.svg");
+  }
 }

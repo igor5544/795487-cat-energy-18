@@ -11,19 +11,19 @@
   width: 25px;
   height: 25px;
   background-color: black;
-}
 
-.social__ico--vkontakte {
-  width: 22px;
-  height: 12px;
-}
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
 
-.social__ico--instagram {
-  width: 17px;
-  height: 17px;
-}
+  &--instagram {
+    width: 17px;
+    height: 17px;
+  }
 
-.social__ico--facebook {
-  width: 10px;
-  height: 19px;
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
 }
