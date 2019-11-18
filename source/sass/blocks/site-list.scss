@@ -4,7 +4,7 @@
 
 .site-list__item {
   padding: 24px 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $gray--lighter;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -13,6 +13,6 @@
 }
 
 .site-list__link {
-  color: #000000;
+  color: $black;
   text-decoration: none;
 }

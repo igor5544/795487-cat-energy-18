@@ -4,14 +4,15 @@
   padding-bottom: 18px;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
-  margin-bottom: 31px;
 }
 
 .social__item {
   width: 25px;
   height: 25px;
-  background-color: black;
+  background-color: $black;
+}
 
+.social__ico {
   &--vkontakte {
     width: 22px;
     height: 12px;

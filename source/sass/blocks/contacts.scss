@@ -1,5 +1,9 @@
-.contacts--gray {
-  background-color: #f2f2f2;
+.contacts {
+  background-color: $white;
+
+  &--gray {
+    background-color: $gray--light;
+  }
 }
 
 .contacts__text-wrapper {
@@ -12,7 +16,7 @@
   margin-bottom: 0;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 

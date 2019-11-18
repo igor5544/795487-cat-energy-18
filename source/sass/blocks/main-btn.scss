@@ -6,11 +6,11 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   background-color: $main-color;
 
   &--gray {
-    background-color: #f2f2f2;
-    color: #444444;
+    background-color: $gray--light;
+    color: $gray--dark;
   }
 }

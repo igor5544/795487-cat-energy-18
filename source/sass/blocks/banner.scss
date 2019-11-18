@@ -5,7 +5,7 @@
 .banner__inner {
   padding-top: 29px;
   padding-bottom: 167px;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@
 
 .banner__title {
   font-size: 36px;
-  color: #ffffff;
+  color: $white;
   font-weight: 500;
   line-height: 36px;
   text-align: center;
@@ -22,7 +22,7 @@
 
 .banner__slogan {
   line-height: 14px;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   text-transform: uppercase;
 }

@@ -5,7 +5,7 @@
 
 .product__link {
   text-decoration: none;
-  color: #000000;
+  color: $black;
 }
 
 .product__feed-title {
@@ -17,7 +17,7 @@
   font-weight: 400;
   text-transform: uppercase;
 
-  &--last {
+  &--center {
     max-width: 100%;
     margin-bottom: 11px;
     text-align: center;
