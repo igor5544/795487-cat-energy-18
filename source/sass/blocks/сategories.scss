@@ -9,7 +9,7 @@
 
 .categories__item {
   padding: 39px 30px 22px 20px;
-  background-color: $gray--light;
+  background-color: $background-color;
 
   + .categories__item {
     margin-top: 20px;
@@ -34,10 +34,10 @@
 .categories__link {
   display: block;
   padding-top: 20px;
-  border-top: 1px solid $gray;
+  border-top: 1px solid $border-color;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $black;
+  color: $text-color--light-side;
   text-decoration: none;
 }
