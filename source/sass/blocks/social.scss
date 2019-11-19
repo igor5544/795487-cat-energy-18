@@ -2,8 +2,8 @@
   @include reset-list;
   padding-top: 19px;
   padding-bottom: 18px;
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid $border-color--dark;
+  border-bottom: 1px solid $border-color--dark;
 }
 
 .social__item {
