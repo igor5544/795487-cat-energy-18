@@ -1,0 +1,16 @@
+.main-btn {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color--light-side;
+  background-color: $btn-color;
+
+  &--gray {
+    background-color: $background-color;
+    color: $text-color;
+  }
+}

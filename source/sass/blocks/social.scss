@@ -1,0 +1,30 @@
+.social {
+  @include reset-list;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.social__item {
+  width: 25px;
+  height: 25px;
+  background-color: $text-color--light-side;
+}
+
+.social__ico {
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
+}
