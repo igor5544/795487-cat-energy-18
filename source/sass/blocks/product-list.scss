@@ -5,9 +5,9 @@
 .product-list__item {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid $border-color--light;
+  border-top: 1px solid $border-color--lighter;
 
   &:last-child {
-    border-bottom: 1px solid $border-color--light;
+    border-bottom: 1px solid $border-color--lighter;
   }
 }

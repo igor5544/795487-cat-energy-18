@@ -1,0 +1,91 @@
+.form__set {
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__field-wrapper {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__title {
+  padding-right: 21px;
+  margin-top: 31px;
+  margin-bottom: 31px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.form__field {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid $gray;
+  margin-left: 16px;
+}
+
+.form-set--radio {
+  padding-top: 21px;
+  padding-bottom: 22px;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+  margin-top: 23px;
+  margin-bottom: 31px;
+}
+
+.form__program-list {
+  @include reset-list;
+}
+
+.form__program-item {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__ico {
+  background-color: $black;
+
+  &--email {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--phone {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.form__comment-field {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 13px;
+  border: 1px solid $gray;
+  margin-bottom: 31px;
+  font-size: 16px;
+  color: $text-color;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+.form__btn {
+  border: none;
+  margin-top: 34px;
+  margin-bottom: 23px;
+}
+
+.program__sub-text {
+  line-height: 16px;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+.special {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.special__wrapper {
+  padding-top: 65px;
+  padding-bottom: 43px;
+  background-color: $background-color--green-image;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.special__ico {
+  width: 56px;
+  height: 61px;
+  margin-bottom: 64px;
+}
+
+.special__text {
+  max-width: 165px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $text-color--dark-side;
+  font-family: $arial;
+}

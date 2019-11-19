@@ -1,0 +1,13 @@
+.аdditional-list {
+  @include reset-list;
+}
+
+.аdditional-list__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-top: 1px solid $border-color--dark;
+
+  &:last-child {
+    border-bottom: 1px solid $border-color--dark;
+  }
+}
