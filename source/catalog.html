@@ -13,25 +13,24 @@
 
     <div class="header__wrapper container">
       <a href="index.html" class="header__logo">
-        <img class="header__logo-image" src="img/logo.svg" width="191" height="39" alt="Логотип cat energy">
+        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
       </a>
+      <nav class="header__nav main-nav">
+        <button type="button" class="main-nav__toggle" aria-label="Открывает/закрывает главное меню"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item  site-list__item--active">
+            <a class="site-list__link">
+              Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header__nav main-nav">
-      <button type="button" class="main-nav__toggle main-nav__toggle--active"
-        aria-label="Открывает/закрывает главное меню"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="index.html" class="site-list__link">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link">
-            Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
 
   </header>
 
@@ -47,203 +46,217 @@
         <ul class="catalog__list product-list">
           <li class="product-list__item" id="pro">
             <article class="product-list__item-content product container">
-              <a href="#" class="product__link">
-                <img class="product__feed-image" src="img/feed-chicken--mini.png" width="140" height="144"
-                  alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 500 грамм">
-              </a>
-              <div class="product__info-wrapper">
+              <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <h3 class="product__feed-title">Cat Energy PRO 500 г</h3>
+                  <img class="product__feed-image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144"
+                    alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 500 грамм">
                 </a>
-                <table class="product__feed-stats feed-stats">
-                  <tr>
-                    <td class="feed-stats__field main-text">Объем</td>
-                    <td class="feed-stats__value main-text main-text">500 г</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Вкус</td>
-                    <td class="feed-stats__value main-text">Курица</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Цена</td>
-                    <td class="feed-stats__value main-text">700 Р.</td>
-                  </tr>
-                </table>
+                <div class="product__info-wrapper">
+                  <a href="#" class="product__link">
+                    <h3 class="product__feed-title">Cat Energy PRO 500 г</h3>
+                  </a>
+                  <table class="product__feed-stats feed-stats">
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text main-text">500 г</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">Курица</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">700 Р.</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <a href="#" class="product__btn main-btn">Заказать</a>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-list__item-content product container">
-              <a href="#" class="product__link">
-                <img class="product__feed-image" src="img/feed-chicken.png" width="140" height="144"
-                  alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 1000 грамм">
-              </a>
-              <div class="product__info-wrapper">
+              <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <h3 class="product__feed-title">Cat Energy PRO 1000 г</h3>
+                  <img class="product__feed-image product__feed-image--big" src="img/chicken-big-mobile@1x.jpg" width="140" height="144"
+                    alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 1000 грамм">
                 </a>
-                <table class="product__feed-stats feed-stats">
-                  <tr>
-                    <td class="feed-stats__field main-text">Объем</td>
-                    <td class="feed-stats__value main-text">1000 г</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Вкус</td>
-                    <td class="feed-stats__value main-text">Курица</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Цена</td>
-                    <td class="feed-stats__value main-text">1000 Р.</td>
-                  </tr>
-                </table>
+                <div class="product__info-wrapper">
+                  <a href="#" class="product__link">
+                    <h3 class="product__feed-title">Cat Energy PRO 1000 г</h3>
+                  </a>
+                  <table class="product__feed-stats feed-stats">
+                    <tr class="feed-stats__line">
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 г</td>
+                    </tr>
+                    <tr class="feed-stats__line">
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">Курица</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 Р.</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <a href="#" class="product__btn main-btn">Заказать</a>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-list__item-content product container">
-              <a href="#" class="product__link">
-                <img class="product__feed-image" src="img/feed-fish--mini.png" width="140" height="144"
-                  alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 500 грамм">
-              </a>
-              <div class="product__info-wrapper">
+              <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <h3 class="product__feed-title">Cat Energy PRO 500 г</h3>
+                  <img class="product__feed-image" src="img/fish-small-mobile@1x.jpg" width="140" height="144"
+                    alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 500 грамм">
                 </a>
-                <table class="product__feed-stats feed-stats">
-                  <tr>
-                    <td class="feed-stats__field main-text">Объем</td>
-                    <td class="feed-stats__value main-text">500 г</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Вкус</td>
-                    <td class="feed-stats__value main-text">Рыба</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Цена</td>
-                    <td class="feed-stats__value main-text">700 Р.</td>
-                  </tr>
-                </table>
+                <div class="product__info-wrapper">
+                  <a href="#" class="product__link">
+                    <h3 class="product__feed-title">Cat Energy PRO 500 г</h3>
+                  </a>
+                  <table class="product__feed-stats feed-stats">
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 г</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">Рыба</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">700 Р.</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <a href="#" class="product__btn main-btn">Заказать</a>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-list__item-content product container">
-              <a href="#" class="product__link">
-                <img class="product__feed-image" src="img/feed-fish.png" width="140" height="144"
-                  alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 1000 грамм">
-              </a>
-              <div class="product__info-wrapper">
+              <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <h3 class="product__feed-title">Cat Energy PRO 1000 г</h3>
+                  <img class="product__feed-image product__feed-image--big" src="img/fish-big-mobile@1x.jpg" width="140" height="144"
+                    alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 1000 грамм">
                 </a>
-                <table class="product__feed-stats feed-stats">
-                  <tr>
-                    <td class="feed-stats__field main-text">Объем</td>
-                    <td class="feed-stats__value main-text">1000 г</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Вкус</td>
-                    <td class="feed-stats__value main-text">Рыба</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Цена</td>
-                    <td class="feed-stats__value main-text">1000 Р.</td>
-                  </tr>
-                </table>
+                <div class="product__info-wrapper">
+                  <a href="#" class="product__link">
+                    <h3 class="product__feed-title">Cat Energy PRO 1000 г</h3>
+                  </a>
+                  <table class="product__feed-stats feed-stats">
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 г</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">Рыба</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 Р.</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <a href="#" class="product__btn main-btn">Заказать</a>
             </article>
           </li>
           <li class="product-list__item" id="slim">
             <article class="product-list__item-content product container">
-              <a href="#" class="product__link">
-                <img class="product__feed-image" src="img/feed-buckwheat--mini.png" width="140" height="144"
-                  alt="Корм cat energy, синего цвета, со вкусом гречкаи - 500 грамм">
-              </a>
-              <div class="product__info-wrapper">
+              <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <h3 class="product__feed-title">Cat Energy Slim 500 г</h3>
+                  <img class="product__feed-image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144"
+                    alt="Корм cat energy, синего цвета, со вкусом гречкаи - 500 грамм">
                 </a>
-                <table class="product__feed-stats feed-stats">
-                  <tr>
-                    <td class="feed-stats__field main-text">Объем</td>
-                    <td class="feed-stats__value main-text">500 г</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Вкус</td>
-                    <td class="feed-stats__value main-text">Гречка</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Цена</td>
-                    <td class="feed-stats__value main-text">400 Р.</td>
-                  </tr>
-                </table>
+                <div class="product__info-wrapper">
+                  <a href="#" class="product__link">
+                    <h3 class="product__feed-title">Cat Energy Slim 500 г</h3>
+                  </a>
+                  <table class="product__feed-stats feed-stats">
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 г</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">Гречка</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">400 Р.</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <a href="#" class="product__btn main-btn">Заказать</a>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-list__item-content product container">
-              <a href="#" class="product__link">
-                <img class="product__feed-image" src="img/feed-buckwheat.png" width="140" height="144"
-                  alt="Корм cat energy, синего цвета, со вкусом гречки - 1000 грамм">
-              </a>
-              <div class="product__info-wrapper">
+              <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <h3 class="product__feed-title">Cat Energy Slim 1000 г</h3>
+                  <img class="product__feed-image product__feed-image--big" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144"
+                    alt="Корм cat energy, синего цвета, со вкусом гречки - 1000 грамм">
                 </a>
-                <table class="product__feed-stats feed-stats">
-                  <tr>
-                    <td class="feed-stats__field main-text">Объем</td>
-                    <td class="feed-stats__value main-text">1000 г</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Вкус</td>
-                    <td class="feed-stats__value main-text">Гречкаа</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Цена</td>
-                    <td class="feed-stats__value main-text">700 Р.</td>
-                  </tr>
-                </table>
+                <div class="product__info-wrapper">
+                  <a href="#" class="product__link">
+                    <h3 class="product__feed-title">Cat Energy Slim 1000 г</h3>
+                  </a>
+                  <table class="product__feed-stats feed-stats">
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 г</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">Гречкаа</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">700 Р.</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <a href="#" class="product__btn main-btn">Заказать</a>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-list__item-content product container">
-              <a href="#" class="product__link">
-                <img class="product__feed-image" src="img/feed-rice--mini.png" width="140" height="144"
-                  alt="Корм cat energy, фиолетового цвета, со вкусом риса - 500 грамм">
-              </a>
-              <div class="product__info-wrapper">
+              <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <h3 class="product__feed-title">Cat Energy Slim 500 г</h3>
+                  <img class="product__feed-image" src="img/rice-small-mobile@1x.jpg" width="140" height="144"
+                    alt="Корм cat energy, фиолетового цвета, со вкусом риса - 500 грамм">
                 </a>
-                <table class="product__feed-stats feed-stats">
-                  <tr>
-                    <td class="feed-stats__field main-text">Объем</td>
-                    <td class="feed-stats__value main-text">500 г</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Вкус</td>
-                    <td class="feed-stats__value main-text">Рис</td>
-                  </tr>
-                  <tr>
-                    <td class="feed-stats__field main-text">Цена</td>
-                    <td class="feed-stats__value main-text">500 Р.</td>
-                  </tr>
-                </table>
+                <div class="" product__info-wrapper">
+                  <a href="#" class="product__link">
+                    <h3 class="product__feed-title">Cat Energy Slim 500 г</h3>
+                  </a>
+                  <table class="product__feed-stats feed-stats">
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 г</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">Рис</td>
+                    </tr>
+                    <tr>
+                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
+                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 Р.</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <a href="#" class="product__btn main-btn">Заказать</a>
             </article>
           </li>
           <li class="product-list__item">
-            <article class="product-list__item-content product product--show-more container">
-              <img class="product__ico" src="img/plus-ico.svg" width="31" height="31" alt="Плюс">
+            <article class="product-list__item-content product product--show-more product--white container">
+              <img class="product__ico" src="img/icon-plus-mobile.svg" width="31" height="31" alt="Плюс">
               <h3 class="product__feed-title product__feed-title--center">Показать еще 100500 товаров</h3>
               <p class="product__text main-text">На самом деле вкусов гораздо больше!</p>
               <a href="#" class="product__btn main-btn main-btn--gray">Показать все</a>
@@ -342,16 +355,16 @@
         </div>
       </div>
       <div class="contacts__map"></div>
-      <img class="contacts__map-image" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
-        width="320" height="374">
+      <img class="contacts__map-image" src="img/bg-map-mobile@1x.png"
+        alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="374">
 
     </section>
 
     <section class="footer-links">
 
-      <div class="contacts__wrapper container">
+      <div class="footer-links__wrapper container">
         <a href="index.html" class="footer-links__logo">
-          <img class="footer-links__logo-image" src="img/footer-logo.svg" width="128" height="24"
+          <img class="footer-links__logo-image" src="img/logo-footer.svg" width="128" height="24"
             alt="Логотип cat energy">
         </a>
         <ul class="footer-links__social social">
@@ -371,10 +384,10 @@
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-links__company-link company-link main-text">
-          HTML Academy
-          <svg class="company-link__ico"></svg>
-        </a>
+        <div class="footer-links__company-link company-link">
+          <a class="company-link__text main-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive"></a><svg class="company-link__ico"></svg></a>
+        </div>
       </div>
 
     </section>

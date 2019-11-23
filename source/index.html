@@ -10,43 +10,46 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header--big-bg">
 
-    <div class="header__wrapper container">
+    <div class="header__wrapper header__wrapper--big-bg container">
       <a class="header__logo">
-        <img class="header__logo-image" src="img/logo.svg" width="191" height="39" alt="Логотип cat energy">
+        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
       </a>
+      <nav class="header__nav main-nav">
+        <button type="button" class="main-nav__toggle" aria-label="Открывает/закрывает главное меню"></button>
+        <ul class="main-nav__list site-list site-list--light">
+          <li class="site-list__item site-list__item--active site-list__item--active-light">
+            <a class="site-list__link site-list__link--light">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link site-list__link--light">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link site-list__link--light">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header__nav main-nav">
-      <button type="button" class="main-nav__toggle main-nav__toggle--active"
-        aria-label="Открывает/закрывает главное меню"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+
   </header>
+
   <main class="main">
 
     <section class="banner">
 
-      <div class="banner__inner">
-        <div class="banner__text-wrapper container">
-          <h1 class="banner__title">Функциональное питание для котов</h1>
-          <div class="banner__slogan">Занялся собой? Займись котом!</div>
+      <div class="banner__wrapper">
+        <div class="banner__inner">
+          <div class="banner__text-wrapper container">
+            <h1 class="banner__title">Функциональное питание для котов</h1>
+            <div class="banner__slogan">Занялся собой? Займись котом!</div>
+          </div>
         </div>
-      </div>
-      <div class="banner__image-wrapper container">
-        <img class="banner__feed-image" src="img/feed-chicken.png" width="280" height="270"
-          alt="Корм cat energy со вкусом курицаы, оранжевого цвета">
-        <a href="form.html" class="banner__btn main-btn">Подобрать программу</a>
+        <div class="banner__content-wrapper container">
+          <img class="banner__feed-image" src="img/index-can-mobile@1x.png" width="280" height="270"
+            alt="Корм cat energy со вкусом курицаы, оранжевого цвета">
+          <a href="form.html" class="banner__btn main-btn">Подобрать программу</a>
+        </div>
       </div>
 
     </section>
@@ -68,7 +71,7 @@
             <h3 class="categories__title">Набор массы</h3>
             <p class="categories__text main-text">
               Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!
             </p>
             <a href="catalog.html#pro" class="categories__link">Каталог pro</a>
           </li>
@@ -171,21 +174,21 @@
             приглашаем к сотрудничеству дилеров!
           </p>
           <p class="contacts__address main-text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span>
           </p>
         </div>
       </div>
       <div class="contacts__map"></div>
-      <img class="contacts__map-image" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
-        width="320" height="374">
+      <img class="contacts__map-image" src="img/bg-map-mobile@1x.png"
+        alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="374">
 
     </section>
 
     <section class="footer-links">
 
-      <div class="contacts__wrapper container">
+      <div class="footer-links__wrapper container">
         <a class="footer-links__logo">
-          <img class="footer-links__logo-image" src="img/footer-logo.svg" width="128" height="24"
+          <img class="footer-links__logo-image" src="img/logo-footer.svg" width="128" height="24"
             alt="Логотип cat energy">
         </a>
         <ul class="footer-links__social social">
@@ -205,10 +208,10 @@
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-links__company-link company-link main-text">
-          HTML Academy
-          <svg class="company-link__ico"></svg>
-        </a>
+        <div class="footer-links__company-link company-link">
+          <a class="company-link__text main-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive"></a><svg class="company-link__ico"></svg></a>
+        </div>
       </div>
 
     </section>

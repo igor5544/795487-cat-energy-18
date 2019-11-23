@@ -13,6 +13,7 @@
 }
 
 .banner__title {
+  margin-top: 0;
   font-size: 36px;
   color: $text-color--dark-side;
   font-weight: 500;
@@ -27,8 +28,114 @@
   text-transform: uppercase;
 }
 
+.banner__content-wrapper {
+  margin-top: -138px;
+}
+
 .banner__feed-image {
+  display: block;
   width: 280px;
   height: 270px;
   margin-bottom: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    padding-bottom: 0;
+  }
+
+  .banner__inner {
+    padding-top: 54px;
+    background-image: none;
+    background-color: $background-color--clean;
+  }
+
+  .banner__title {
+    max-width: 415px;
+    margin-left: 90px;
+    margin-bottom: 35px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: $text-color--light-side;
+    text-align: left;
+  }
+
+  .banner__slogan {
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $text-color--light-side;
+    text-align: left;
+  }
+
+  .banner__content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 609px;
+    padding-top: 28px;
+    margin-top: -147px;
+  }
+
+  .banner__feed-image {
+    position: absolute;
+    top: 0;
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+
+  .banner__btn {
+    max-width: 245px;
+    margin-left: 90px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    z-index: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    padding-bottom: 80px;
+  }
+
+  .banner__wrapper {
+    margin-top: -569px;
+  }
+
+  .banner__inner {
+    flex-basis: 50%;
+    background-color: transparent;
+  }
+
+  .banner__title {
+    margin-top: 59px;
+    margin-left: 81px;
+  }
+
+  .banner__slogan {
+    margin-left: 81px;
+  }
+
+  .banner__content-wrapper {
+    min-height: auto;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .banner__feed-image {
+    position: static;
+    width: 552px;
+    height: 499px;
+    margin-top: -310px;
+    margin-right: 194px;
+  }
+
+  .banner__btn {
+    margin-left: 81px;
+  }
 }

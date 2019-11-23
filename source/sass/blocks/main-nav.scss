@@ -10,3 +10,19 @@
     background: url("../img/icon-close.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+  }
+}

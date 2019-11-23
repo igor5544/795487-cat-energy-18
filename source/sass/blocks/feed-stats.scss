@@ -1,12 +1,29 @@
 .feed-stats {
   font-size: 12px;
   line-height: 16px;
+  border-collapse: collapse;
 }
 
-.feed-stats__field {
-  padding-right: 64px;
+.feed-stats__cell {
+  &--field {
+    padding-right: 52px;
+  }
+
+  &--value {
+    text-align: right;
+  }
 }
 
-.feed-stats__value {
-  text-align: right;
+@media (min-width: $tablet-width) {
+  .feed-stats {
+    width: 100%;
+    margin-bottom: 33px;
+    font-size: 16px;
+  }
+
+  .feed-stats__cell {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid $border-color--dark;
+  }
 }

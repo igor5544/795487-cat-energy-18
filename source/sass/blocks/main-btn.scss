@@ -14,3 +14,11 @@
     color: $text-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-btn {
+    padding-top: 11px;
+    padding-bottom: 9px;
+    line-height: 20px;
+  }
+}

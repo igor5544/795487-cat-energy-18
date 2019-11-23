@@ -1,3 +1,5 @@
+$tablet-width: 768px;
+$desktop-width: 1300px;
 $main-font: "Oswald", "Tahoma", sans-serif;
 $arial: "Arial", sans-serif;
 $main-color: #68b738;
@@ -18,4 +20,7 @@ $text-color--dark-side: $white;
 $background-color: $gray--lighter;
 $background-color--clean: $white;
 $background-color--green-image: $main-color;
+$decoration-color: $main-color;
+$menu-decoration: $main-color;
+$menu-decoration--desktop: $white;
 $btn-color: $main-color;

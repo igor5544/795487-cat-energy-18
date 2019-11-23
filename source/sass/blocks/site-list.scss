@@ -1,5 +1,10 @@
 .site-list {
   @include reset-list;
+  position: absolute;
+  width: 100%;
+  top: 65px;
+  right: 0;
+  background-color: $background-color--clean;
 }
 
 .site-list__item {
@@ -10,9 +15,63 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+
+  &:last-child {
+    border-bottom: 1px solid $border-color--light;
+  }
 }
 
 .site-list__link {
   color: $text-color--light-side;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    border: none;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+
+    &:last-child {
+      border: none;
+    }
+
+    &.site-list__item--active {
+      border-bottom: 2px solid $menu-decoration;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    &--light {
+      color: $text-color--dark-side;
+    }
+  }
+
+  .site-list__item {
+    font-size: 20px;
+
+    + .site-list__item {
+      margin-left: 36px;
+    }
+
+    &.site-list__item--active-light {
+      border-color: $menu-decoration--desktop;
+    }
+  }
 }

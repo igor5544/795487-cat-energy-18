@@ -1,5 +1,13 @@
 .header {
+  /*временный отступ для меню*/
+  padding-bottom: 205px;
   border-bottom: 1px solid $border-color--light;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -11,4 +19,53 @@
 .header__logo-image {
   width: 191px;
   height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    /*временный отступ для меню*/
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .header__wrapper {
+    margin-top: 24px;
+  }
+
+  .header__logo {
+    margin: 0;
+    margin-right: 96px;
+  }
+
+  .header__logo-image {
+    min-width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    &--big-bg {
+      background-image: url("../img/index-background-mobile@1x.jpg"),
+        linear-gradient($background-color--green-image 50%);
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: 50%;
+    }
+  }
+
+  .header__wrapper {
+    align-items: flex-start;
+    padding-top: 53px;
+    margin-top: 0;
+
+    &--big-bg {
+      min-height: 696px;
+    }
+  }
+
+  .header__logo-image {
+    width: 203px;
+    height: 60px;
+  }
 }
