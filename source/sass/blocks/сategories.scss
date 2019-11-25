@@ -29,10 +29,6 @@
 .categories__text {
   max-width: 230px;
   margin-bottom: 23px;
-
-  &:last-of-type br {
-    display: none;
-  }
 }
 
 .categories__link {
@@ -73,8 +69,8 @@
     max-width: 372px;
     margin-bottom: 61px;
 
-    &:last-of-type br {
-      display: block;
+    &--short {
+      max-width: 340px;
     }
   }
 
@@ -123,9 +119,5 @@
   .categories__text {
     max-width: 462px;
     margin-bottom: 36px;
-
-    &:last-of-type br {
-      display: none;
-    }
   }
 }

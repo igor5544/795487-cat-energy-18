@@ -1,3 +1,7 @@
+.product {
+  @include container;
+}
+
 .product__content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -12,6 +16,10 @@
 .product__link {
   text-decoration: none;
   color: $text-color--light-side;
+}
+
+.product__info-wrapper {
+  flex-grow: 1;
 }
 
 .product__feed-title {
@@ -48,6 +56,7 @@
 
 @media (min-width: $tablet-width) {
   .product {
+    @include container-reset;
     min-width: 320px;
     width: 100%;
     min-height: 431px;

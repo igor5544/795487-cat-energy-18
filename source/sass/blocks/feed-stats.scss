@@ -1,15 +1,12 @@
 .feed-stats {
+  width: 100%;
   font-size: 12px;
   line-height: 16px;
   border-collapse: collapse;
 }
 
 .feed-stats__cell {
-  &--field {
-    padding-right: 52px;
-  }
-
-  &--value {
+  &:last-child {
     text-align: right;
   }
 }

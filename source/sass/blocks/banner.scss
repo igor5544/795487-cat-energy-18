@@ -2,14 +2,12 @@
   padding-bottom: 11px;
 }
 
-.banner__inner {
+.banner__wrapper {
   padding-top: 29px;
-  padding-bottom: 167px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: center;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $background-color--green-image 50%, transparent 50%);
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $background-color--green-image;
+  background-size: 100% 305px;
 }
 
 .banner__title {
@@ -22,14 +20,11 @@
 }
 
 .banner__slogan {
+  margin-bottom: 29px;
   line-height: 14px;
   color: $text-color--dark-side;
   text-align: center;
   text-transform: uppercase;
-}
-
-.banner__content-wrapper {
-  margin-top: -138px;
 }
 
 .banner__feed-image {
@@ -44,7 +39,7 @@
     padding-bottom: 0;
   }
 
-  .banner__inner {
+  .banner__wrapper {
     padding-top: 54px;
     background-image: none;
     background-color: $background-color--clean;
@@ -70,19 +65,14 @@
   }
 
   .banner__content-wrapper {
-    position: relative;
     display: flex;
-    flex-direction: column;
-    min-height: 609px;
-    padding-top: 28px;
-    margin-top: -147px;
+    flex-direction: column-reverse;
   }
 
   .banner__feed-image {
-    position: absolute;
-    top: 0;
     width: 709px;
     height: 609px;
+    margin-top: -65px;
     margin-bottom: 0;
     z-index: 2;
   }
@@ -103,12 +93,11 @@
   }
 
   .banner__wrapper {
-    margin-top: -569px;
+    background-color: transparent;
   }
 
   .banner__inner {
     flex-basis: 50%;
-    background-color: transparent;
   }
 
   .banner__title {

@@ -50,7 +50,7 @@
       margin-right: 0;
     }
 
-    &:nth-of-type(1n + 3) {
+    &:nth-of-type(header__toggle+ 3) {
       margin-top: 87px;
     }
   }
@@ -79,11 +79,11 @@
       margin-right: 0;
     }
 
-    &:nth-of-type(1n + 3) {
+    &:nth-of-type(header__toggle+ 3) {
       margin-top: 0;
     }
 
-    &:nth-of-type(1n + 5) {
+    &:nth-of-type(header__toggle+ 5) {
       margin-top: 78px;
     }
   }

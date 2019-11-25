@@ -12,21 +12,23 @@
 
   <header class="header header--big-bg">
 
-    <div class="header__wrapper header__wrapper--big-bg container">
-      <a class="header__logo">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
-      </a>
+    <div class="header__wrapper">
+      <div class="header__inner">
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
+        </a>
+        <button type="button" class="header__toggle" aria-label="Открывает/закрывает главное меню"></button>
+      </div>
       <nav class="header__nav main-nav">
-        <button type="button" class="main-nav__toggle" aria-label="Открывает/закрывает главное меню"></button>
         <ul class="main-nav__list site-list site-list--light">
-          <li class="site-list__item site-list__item--active site-list__item--active-light">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link site-list__link--light">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link site-list__link--light">Каталог продукции</a>
+            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link site-list__link--light">Подбор программы</a>
+            <a href="form.html" class="site-list__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,16 +41,14 @@
     <section class="banner">
 
       <div class="banner__wrapper">
-        <div class="banner__inner">
-          <div class="banner__text-wrapper container">
-            <h1 class="banner__title">Функциональное питание для котов</h1>
-            <div class="banner__slogan">Занялся собой? Займись котом!</div>
+        <div class="banner__inner container">
+          <h1 class="banner__title">Функциональное питание для котов</h1>
+          <div class="banner__slogan">Занялся собой? Займись котом!</div>
+          <div class="banner__content-wrapper">
+            <img class="banner__feed-image" src="img/index-can-mobile@1x.png" width="280" height="270"
+              alt="Корм cat energy со вкусом курицаы, оранжевого цвета">
+            <a href="form.html" class="banner__btn main-btn">Подобрать программу</a>
           </div>
-        </div>
-        <div class="banner__content-wrapper container">
-          <img class="banner__feed-image" src="img/index-can-mobile@1x.png" width="280" height="270"
-            alt="Корм cat energy со вкусом курицаы, оранжевого цвета">
-          <a href="form.html" class="banner__btn main-btn">Подобрать программу</a>
         </div>
       </div>
 
@@ -69,9 +69,9 @@
           </li>
           <li class="categories__item">
             <h3 class="categories__title">Набор массы</h3>
-            <p class="categories__text main-text">
+            <p class="categories__text categories__text--short main-text">
               Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
             <a href="catalog.html#pro" class="categories__link">Каталог pro</a>
           </li>

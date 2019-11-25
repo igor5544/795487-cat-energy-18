@@ -11,12 +11,14 @@
 
   <header class="header">
 
-    <div class="header__wrapper container">
-      <a href="index.html" class="header__logo">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
-      </a>
+    <div class="header__wrapper">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
+        </a>
+        <button type="button" class="header__toggle" aria-label="Открывает/закрывает главное меню"></button>
+      </div>
       <nav class="header__nav main-nav">
-        <button type="button" class="main-nav__toggle" aria-label="Открывает/закрывает главное меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html" class="site-list__link">Главная</a>
@@ -39,13 +41,11 @@
     <section class="catalog">
 
       <div class="catalog__wrapper">
-        <div class="catalog__title-wrapper container">
-          <h1 class="catalog__title main-title">Каталог продукции</h1>
-        </div>
+        <h1 class="catalog__title main-title">Каталог продукции</h1>
         <h2 class="visually-hidden">Основные товары</h2>
         <ul class="catalog__list product-list">
           <li class="product-list__item" id="pro">
-            <article class="product-list__item-content product container">
+            <article class="product-list__item-content product">
               <div class="product__content-wrapper">
                 <a href="#" class="product__link">
                   <img class="product__feed-image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144"
@@ -57,16 +57,16 @@
                   </a>
                   <table class="product__feed-stats feed-stats">
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text main-text">500 г</td>
+                      <td class="feed-stats__cell main-text">Объем</td>
+                      <td class="feed-stats__cell main-text main-text">500 г</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">Курица</td>
+                      <td class="feed-stats__cell main-text">Вкус</td>
+                      <td class="feed-stats__cell main-text">Курица</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">700 Р.</td>
+                      <td class="feed-stats__cell main-text">Цена</td>
+                      <td class="feed-stats__cell main-text">700 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -75,11 +75,11 @@
             </article>
           </li>
           <li class="product-list__item">
-            <article class="product-list__item-content product container">
+            <article class="product-list__item-content product">
               <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <img class="product__feed-image product__feed-image--big" src="img/chicken-big-mobile@1x.jpg" width="140" height="144"
-                    alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 1000 грамм">
+                  <img class="product__feed-image product__feed-image--big" src="img/chicken-big-mobile@1x.jpg"
+                    width="140" height="144" alt="Корм cat energy, оранжевого цвета, со вкусом курицы - 1000 грамм">
                 </a>
                 <div class="product__info-wrapper">
                   <a href="#" class="product__link">
@@ -87,16 +87,16 @@
                   </a>
                   <table class="product__feed-stats feed-stats">
                     <tr class="feed-stats__line">
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 г</td>
+                      <td class="feed-stats__cell main-text">Объем</td>
+                      <td class="feed-stats__cell main-text">1000 г</td>
                     </tr>
                     <tr class="feed-stats__line">
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">Курица</td>
+                      <td class="feed-stats__cell main-text">Вкус</td>
+                      <td class="feed-stats__cell main-text">Курица</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 Р.</td>
+                      <td class="feed-stats__cell main-text">Цена</td>
+                      <td class="feed-stats__cell main-text">1000 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -105,7 +105,7 @@
             </article>
           </li>
           <li class="product-list__item">
-            <article class="product-list__item-content product container">
+            <article class="product-list__item-content product">
               <div class="product__content-wrapper">
                 <a href="#" class="product__link">
                   <img class="product__feed-image" src="img/fish-small-mobile@1x.jpg" width="140" height="144"
@@ -117,16 +117,16 @@
                   </a>
                   <table class="product__feed-stats feed-stats">
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 г</td>
+                      <td class="feed-stats__cell main-text">Объем</td>
+                      <td class="feed-stats__cell main-text">500 г</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">Рыба</td>
+                      <td class="feed-stats__cell main-text">Вкус</td>
+                      <td class="feed-stats__cell main-text">Рыба</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">700 Р.</td>
+                      <td class="feed-stats__cell main-text">Цена</td>
+                      <td class="feed-stats__cell main-text">700 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -135,11 +135,11 @@
             </article>
           </li>
           <li class="product-list__item">
-            <article class="product-list__item-content product container">
+            <article class="product-list__item-content product">
               <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <img class="product__feed-image product__feed-image--big" src="img/fish-big-mobile@1x.jpg" width="140" height="144"
-                    alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 1000 грамм">
+                  <img class="product__feed-image product__feed-image--big" src="img/fish-big-mobile@1x.jpg" width="140"
+                    height="144" alt="Корм cat energy, зелёного цвета, со вкусом рыбы - 1000 грамм">
                 </a>
                 <div class="product__info-wrapper">
                   <a href="#" class="product__link">
@@ -147,16 +147,16 @@
                   </a>
                   <table class="product__feed-stats feed-stats">
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 г</td>
+                      <td class="feed-stats__cell main-text">Объем</td>
+                      <td class="feed-stats__cell main-text">1000 г</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">Рыба</td>
+                      <td class="feed-stats__cell main-text">Вкус</td>
+                      <td class="feed-stats__cell main-text">Рыба</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 Р.</td>
+                      <td class="feed-stats__cell main-text">Цена</td>
+                      <td class="feed-stats__cell main-text">1000 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -165,7 +165,7 @@
             </article>
           </li>
           <li class="product-list__item" id="slim">
-            <article class="product-list__item-content product container">
+            <article class="product-list__item-content product">
               <div class="product__content-wrapper">
                 <a href="#" class="product__link">
                   <img class="product__feed-image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144"
@@ -177,16 +177,16 @@
                   </a>
                   <table class="product__feed-stats feed-stats">
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 г</td>
+                      <td class="feed-stats__cell main-text">Объем</td>
+                      <td class="feed-stats__cell main-text">500 г</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">Гречка</td>
+                      <td class="feed-stats__cell main-text">Вкус</td>
+                      <td class="feed-stats__cell main-text">Гречка</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">400 Р.</td>
+                      <td class="feed-stats__cell main-text">Цена</td>
+                      <td class="feed-stats__cell main-text">400 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -195,11 +195,11 @@
             </article>
           </li>
           <li class="product-list__item">
-            <article class="product-list__item-content product container">
+            <article class="product-list__item-content product">
               <div class="product__content-wrapper">
                 <a href="#" class="product__link">
-                  <img class="product__feed-image product__feed-image--big" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144"
-                    alt="Корм cat energy, синего цвета, со вкусом гречки - 1000 грамм">
+                  <img class="product__feed-image product__feed-image--big" src="img/buckwheat-big-mobile@1x.jpg"
+                    width="140" height="144" alt="Корм cat energy, синего цвета, со вкусом гречки - 1000 грамм">
                 </a>
                 <div class="product__info-wrapper">
                   <a href="#" class="product__link">
@@ -207,16 +207,16 @@
                   </a>
                   <table class="product__feed-stats feed-stats">
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">1000 г</td>
+                      <td class="feed-stats__cell main-text">Объем</td>
+                      <td class="feed-stats__cell main-text">1000 г</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">Гречкаа</td>
+                      <td class="feed-stats__cell main-text">Вкус</td>
+                      <td class="feed-stats__cell main-text">Гречкаа</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">700 Р.</td>
+                      <td class="feed-stats__cell main-text">Цена</td>
+                      <td class="feed-stats__cell main-text">700 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -225,28 +225,28 @@
             </article>
           </li>
           <li class="product-list__item">
-            <article class="product-list__item-content product container">
+            <article class="product-list__item-content product">
               <div class="product__content-wrapper">
                 <a href="#" class="product__link">
                   <img class="product__feed-image" src="img/rice-small-mobile@1x.jpg" width="140" height="144"
                     alt="Корм cat energy, фиолетового цвета, со вкусом риса - 500 грамм">
                 </a>
-                <div class="" product__info-wrapper">
+                <div class="product__info-wrapper">
                   <a href="#" class="product__link">
                     <h3 class="product__feed-title">Cat Energy Slim 500 г</h3>
                   </a>
                   <table class="product__feed-stats feed-stats">
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Объем</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 г</td>
+                      <td class="feed-stats__cell main-text">Объем</td>
+                      <td class="feed-stats__cell main-text">500 г</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Вкус</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">Рис</td>
+                      <td class="feed-stats__cell main-text">Вкус</td>
+                      <td class="feed-stats__cell main-text">Рис</td>
                     </tr>
                     <tr>
-                      <td class="feed-stats__cell feed-stats__cell--field main-text">Цена</td>
-                      <td class="feed-stats__cell feed-stats__cell--value main-text">500 Р.</td>
+                      <td class="feed-stats__cell main-text">Цена</td>
+                      <td class="feed-stats__cell main-text">500 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -255,7 +255,7 @@
             </article>
           </li>
           <li class="product-list__item">
-            <article class="product-list__item-content product product--show-more product--white container">
+            <article class="product-list__item-content product product--show-more product--white">
               <img class="product__ico" src="img/icon-plus-mobile.svg" width="31" height="31" alt="Плюс">
               <h3 class="product__feed-title product__feed-title--center">Показать еще 100500 товаров</h3>
               <p class="product__text main-text">На самом деле вкусов гораздо больше!</p>
@@ -275,7 +275,7 @@
           <li class="аdditional-list__item">
             <article class="аdditional-list__item-content аdditional-product">
               <h3 class="аdditional-product__title">Сахарозаменитель</h3>
-              <table class="аdditional-product__cost cost">
+              <table class="аdditional-product__cost cost main-text">
                 <tr>
                   <td class="cost__name">1 упаковка (100 г)</td>
                   <td class="cost__price">200 Р.</td>
@@ -287,7 +287,7 @@
           <li class="аdditional-list__item">
             <article class="аdditional-list__item-content аdditional-product">
               <h3 class="аdditional-product__title">Питьевая вода</h3>
-              <table class="аdditional-product__cost cost">
+              <table class="аdditional-product__cost cost main-text">
                 <tr>
                   <td class="cost__name">5 литров</td>
                   <td class="cost__price">50 Р.</td>
@@ -299,7 +299,7 @@
           <li class="аdditional-list__item">
             <article class="аdditional-list__item-content аdditional-product">
               <h3 class="аdditional-product__title">Молоко</h3>
-              <table class="аdditional-product__cost cost">
+              <table class="аdditional-product__cost cost  main-text">
                 <tr>
                   <td class="cost__name">1 литр</td>
                   <td class="cost__price">100 Р.</td>
@@ -311,7 +311,7 @@
           <li class="аdditional-list__item">
             <article class="аdditional-list__item-content аdditional-product">
               <h3 class="аdditional-product__title">Витамины</h3>
-              <table class="аdditional-product__cost cost">
+              <table class="аdditional-product__cost cost main-text">
                 <tr>
                   <td class="cost__name">1 упаковка (30 г)</td>
                   <td class="cost__price">300 Р.</td>
@@ -328,12 +328,14 @@
     <section class="special">
 
       <div class="special__wrapper container">
-        <h2 class="visually-hidden">Акция</h2>
-        <img class="special__ico" src="img/gift-ico.svg" width="56" height="61" alt="Подарок">
-        <p class="special__text">
-          Закажите все
-          и&nbsp;получите чехол для кота в подарок!
-        </p>
+        <div class="special__inner">
+          <h2 class="visually-hidden">Акция</h2>
+          <img class="special__ico" src="img/gift-ico.svg" width="56" height="61" alt="Подарок">
+          <p class="special__text">
+            Закажите все
+            и&nbsp;получите чехол для кота в подарок!
+          </p>
+        </div>
       </div>
 
     </section>

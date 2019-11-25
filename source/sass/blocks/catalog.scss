@@ -3,6 +3,7 @@
 }
 
 .catalog__title {
+  @include container;
   margin-bottom: 35px;
 }
 
@@ -13,22 +14,16 @@
   }
 
   .catalog__wrapper {
-    max-width: 768px;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    @include container--tablet;
   }
 
   .catalog__title {
-    margin-bottom: 16px;
+    @include container-reset;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
-    max-width: 1300px;
-    padding-right: 40px;
-    padding-left: 40px;
+    @include container--desktop;
   }
 }

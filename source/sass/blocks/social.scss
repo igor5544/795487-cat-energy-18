@@ -20,7 +20,7 @@
     margin-right: 0;
   }
 
-  &:nth-of-type(1n + 6) {
+  &:nth-of-type(header__toggle+ 6) {
     margin-top: 15px;
   }
 }
@@ -92,11 +92,11 @@
       margin-right: 0;
     }
 
-    &:nth-of-type(1n + 6) {
+    &:nth-of-type(header__toggle+ 6) {
       margin-top: 0;
     }
 
-    &:nth-of-type(1n + 13) {
+    &:nth-of-type(header__toggle+ 13) {
       margin-top: 15px;
     }
   }
