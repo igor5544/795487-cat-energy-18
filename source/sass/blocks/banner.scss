@@ -1,9 +1,6 @@
 .banner {
-  padding-bottom: 11px;
-}
-
-.banner__wrapper {
   padding-top: 29px;
+  padding-bottom: 11px;
   background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $background-color--green-image 50%, transparent 50%);
   background-position: center top;
   background-repeat: no-repeat;
@@ -36,11 +33,8 @@
 
 @media (min-width: $tablet-width) {
   .banner {
-    padding-bottom: 0;
-  }
-
-  .banner__wrapper {
     padding-top: 54px;
+    padding-bottom: 0;
     background-image: none;
     background-color: $background-color--clean;
   }
@@ -90,13 +84,10 @@
 @media (min-width: $desktop-width) {
   .banner {
     padding-bottom: 80px;
-  }
-
-  .banner__wrapper {
     background-color: transparent;
   }
 
-  .banner__inner {
+  .banner__wrapper {
     flex-basis: 50%;
   }
 
