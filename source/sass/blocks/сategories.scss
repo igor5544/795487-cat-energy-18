@@ -9,10 +9,11 @@
 
 .categories__item {
   padding: 39px 30px 22px 20px;
+  margin-top: 20px;
   background-color: $background-color;
 
-  .categories__item {
-    margin-top: 20px;
+  &:first-child {
+    margin-top: 0;
   }
 }
 
