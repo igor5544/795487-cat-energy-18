@@ -1,7 +1,10 @@
 .social {
   @include reset-list;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 280px;
+  padding: 19px 10px 18px 10px;
   border-top: 1px solid $border-color--dark;
   border-bottom: 1px solid $border-color--dark;
 }
@@ -9,7 +12,17 @@
 .social__item {
   width: 25px;
   height: 25px;
+  margin-right: 29px;
   background-color: $text-color--light-side;
+
+  &:nth-of-type(5n),
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:nth-of-type(n + 6) {
+    margin-top: 15px;
+  }
 }
 
 .social__ico {
@@ -26,5 +39,65 @@
   &--facebook {
     width: 10px;
     height: 19px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+    border: none;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .social__item {
+    width: 30px;
+    height: 30px;
+    margin-right: 24px;
+  }
+
+  .social__ico {
+    &--vkontakte {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    max-width: 660px;
+  }
+
+  .social__item {
+    width: 30px;
+    height: 30px;
+    margin-right: 24px;
+
+    &:nth-of-type(5n) {
+      margin-right: 24px;
+    }
+
+    &:nth-of-type(12n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(n + 6) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(n + 13) {
+      margin-top: 15px;
+    }
   }
 }

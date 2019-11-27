@@ -15,8 +15,27 @@
   height: 24px;
 }
 
-.footer-links__company-link {
-  font-size: 16px;
-  line-height: 16px;
-  text-decoration: none;
+
+@media (min-width: $tablet-width) {
+  .footer-links {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .footer-links__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-links__logo {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-links {
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
 }

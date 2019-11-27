@@ -1,9 +1,28 @@
 .company-link {
   padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-link__text {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
 }
 
 .company-link__ico {
   width: 27px;
   height: 34px;
   background-color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .company-link {
+    padding-top: 0;
+  }
+
+  .company-link__text {
+    margin-right: 23px;
+  }
 }

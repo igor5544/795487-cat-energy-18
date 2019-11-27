@@ -3,5 +3,27 @@
 }
 
 .catalog__title {
+  @include container;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 58px;
+    padding-bottom: 35px;
+  }
+
+  .catalog__wrapper {
+    @include container--tablet;
+  }
+
+  .catalog__title {
+    @include container-reset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include container--desktop;
+  }
 }
