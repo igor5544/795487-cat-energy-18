@@ -22,7 +22,7 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 140px;
-    margin-right: 51px;
+    margin-right: 60px;
     border: none;
 
     &:nth-of-type(2n) {
@@ -33,10 +33,10 @@
 
 @media (min-width: $desktop-width) {
   .product-list__item {
-    margin-right: 59px;
+    margin-right: 80px;
 
     &:nth-of-type(2n) {
-      margin-right: 59px;
+      margin-right: 80px;
     }
 
     &:nth-of-type(4n) {

@@ -5,3 +5,26 @@
 .cost__price {
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+  .cost {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .cost__name {
+    padding-right: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cost__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 286px;
+  }
+
+  .cost__name {
+    padding-right: 0;
+  }
+}
