@@ -1,14 +1,11 @@
-.form__inner {
-  @include container;
-}
-
 .form__set {
-  padding: 0;
+  @include container;
   border: none;
   font-size: 16px;
   text-transform: uppercase;
 
   &--radio {
+    @include container-reset;
     padding-top: 21px;
     padding-bottom: 22px;
     border-top: 1px solid $gray;
@@ -16,6 +13,10 @@
     margin-top: 23px;
     margin-bottom: 31px;
   }
+}
+
+.form__inner {
+  @include container;
 }
 
 .form__field-wrapper {
@@ -85,6 +86,10 @@
   }
 }
 
+.form__send-wrapper {
+  @include container;
+}
+
 .form__btn {
   border: none;
   margin-top: 34px;
@@ -106,7 +111,10 @@
   }
 
   .form__set {
+    @include container-reset;
+
     &--radio {
+      max-height: 196px;
       padding: 36px 0 33px 88px;
       border: 1px solid $gray--silver;
       margin-top: 72px;
@@ -149,6 +157,7 @@
   }
 
   .form__send-wrapper {
+    @include container-reset;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -176,15 +185,35 @@
   .form__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 73px;
+    flex-wrap: wrap;
   }
 
   .form__set {
+    width: 100%;
+    margin-bottom: 72px;
+
     &--radio {
       width: 570px;
       padding: 36px 0 33px 88px;
-      margin: 0;
+      margin-top: 0;
     }
+
+    &:first-child {
+      max-width: 50%;
+      padding-right: 80px;
+    }
+
+    &:nth-child(2) {
+      max-width: 50%;
+    }
+  }
+
+  .form__title {
+    margin-top: 0;
+  }
+
+  .form__comment-field {
+    margin-bottom: 0;
   }
 
   .form__contacts-wrapper {
@@ -209,7 +238,7 @@
   }
 
   .form__btn {
-    max-width: 568px;
+    min-width: 568px;
     margin-right: 82px;
   }
 }

@@ -1,9 +1,4 @@
 .special {
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.special__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,11 +30,6 @@
 
 @media (min-width: $tablet-width) {
   .special {
-    padding-top: 34px;
-    padding-bottom: 76px;
-  }
-
-  .special__wrapper {
     flex-direction: row;
     justify-content: space-around;
     min-height: 200px;
@@ -58,15 +48,10 @@
 
 @media (min-width: $desktop-width) {
   .special {
-    padding: 0;
-  }
-
-  .special__wrapper {
     flex-direction: column;
     justify-content: space-between;
     min-width: 245px;
-    min-height: 289px;
-    margin-top: 112px;
+    min-height: 100%;
   }
 
   .special__ico {

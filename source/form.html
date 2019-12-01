@@ -48,23 +48,22 @@
       </div>
       <form class="program__form form" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__wrapper">
-          <div class="form__inner">
-            <fieldset class="form__set">
-              <legend class="visually-hidden">Данные кота</legend>
-              <div class="form__field-wrapper">
-                <label class="form__field-title" for="cat-name">Имя:*</label>
-                <input class="form__field" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-              </div>
-              <div class="form__field-wrapper">
-                <label class="form__field-title" for="cat-weight">Вес(КГ):*</label>
-                <input class="form__field" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-              </div>
-              <div class="form__field-wrapper">
-                <label class="form__field-title" for="cat-age">Возраст(ЛЕТ):</label>
-                <input class="form__field" type="text" name="cat-age" id="cat-age" placeholder="7">
-              </div>
-            </fieldset>
-          </div>
+          <fieldset class="form__set">
+            <legend class="visually-hidden">Данные кота</legend>
+            <div class="form__field-wrapper">
+              <label class="form__field-title" for="cat-name">Имя:*</label>
+              <input class="form__field" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            </div>
+            <div class="form__field-wrapper">
+              <label class="form__field-title" for="cat-weight">Вес(КГ):*</label>
+              <input class="form__field" type="number" min="0" name="cat-weight" id="cat-weight" placeholder="7"
+                required>
+            </div>
+            <div class="form__field-wrapper">
+              <label class="form__field-title" for="cat-age">Возраст(ЛЕТ):</label>
+              <input class="form__field" type="number" min="0" name="cat-age" id="cat-age" placeholder="7">
+            </div>
+          </fieldset>
           <fieldset class="form__set form__set--radio">
             <div class="form__inner">
               <legend class="visually-hidden">Программа питания</legend>
@@ -85,9 +84,7 @@
                 </li>
               </ul>
             </div>
-        </div>
-        </fieldset>
-        <div class="form__inner">
+          </fieldset>
           <fieldset class="form__set">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
             <div class="form__contacts-wrapper">
@@ -99,7 +96,7 @@
               </div>
               <div class="form__field-wrapper form__field-wrapper--ico">
                 <label class="form__field-title" for="phone">Телефон:*</label>
-                <input class="form__field" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__field" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="form__ico form__ico--phone" aria-label="Иконка телефона"></svg>
               </div>
             </div>

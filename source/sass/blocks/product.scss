@@ -122,9 +122,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .product {
-    min-width: auto;
-    width: 245px;
+@media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    .product {
+      min-width: auto;
+      width: 245px;
+    }
   }
 }
