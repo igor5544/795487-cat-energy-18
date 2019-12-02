@@ -15,11 +15,16 @@
 
 .contacts__text {
   margin-top: 0;
+  margin-right: 19px;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 20px;
   color: $text-color--light-side;
   text-transform: uppercase;
+}
+
+.contacts__address {
+  line-height: 20px;
 }
 
 .contacts__map-image {
@@ -47,7 +52,6 @@
     justify-content: space-between;
     max-width: 155px;
     text-align: right;
-    line-height: 20px;
   }
 
   .contacts__map-image {

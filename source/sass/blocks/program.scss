@@ -3,6 +3,10 @@
   padding-bottom: 34px;
 }
 
+.program__text-wrapper {
+  @include container;
+}
+
 .program__title {
   margin-bottom: 35px;
 }
@@ -12,4 +16,40 @@
   margin-bottom: 39px;
   max-width: 226px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    @include container--tablet;
+    padding-top: 63px;
+    padding-bottom: 61px;
+  }
+
+  .program__text-wrapper {
+    @include container-reset;
+  }
+
+  .program__title {
+    margin-bottom: 53px;
+  }
+
+  .program__text {
+    max-width: 365px;
+    padding-left: 40px;
+    margin-bottom: 69px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    @include container--desktop;
+    padding-top: 81px;
+    padding-bottom: 71px;
+  }
+
+  .program__text {
+    padding-left: 0;
+  }
 }

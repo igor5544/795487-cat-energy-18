@@ -1,0 +1,25 @@
+.section-wrapper__special {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .section-wrapper__special {
+    margin-top: 34px;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 86px;
+  }
+
+  .section-wrapper__special {
+    margin: 0;
+    margin-top: 112px;
+  }
+}

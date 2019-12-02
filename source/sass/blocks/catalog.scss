@@ -26,4 +26,8 @@
   .catalog__wrapper {
     @include container--desktop;
   }
+
+  .catalog {
+    padding-bottom: 39px;
+  }
 }

@@ -57,7 +57,7 @@
 @media (min-width: $tablet-width) {
   .product {
     @include container-reset;
-    min-width: 320px;
+    min-width: 324px;
     width: 100%;
     min-height: 431px;
     padding-right: 37px;
@@ -122,8 +122,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .product {
-    min-width: 245px;
+@media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    .product {
+      min-width: auto;
+      width: 245px;
+    }
   }
 }
