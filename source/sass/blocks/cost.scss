@@ -6,6 +6,12 @@
   text-align: right;
 }
 
+.cost__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+}
+
 @media (min-width: $tablet-width) {
   .cost {
     font-size: 16px;
@@ -19,8 +25,6 @@
 
 @media (min-width: $desktop-width) {
   .cost__wrapper {
-    display: flex;
-    justify-content: space-between;
     min-width: 286px;
   }
 

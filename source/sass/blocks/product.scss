@@ -11,6 +11,7 @@
   display: block;
   width: 140px;
   height: 144px;
+  margin-top: -21px;
 }
 
 .product__link {
@@ -24,7 +25,7 @@
 
 .product__feed-title {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   max-width: 78px;
   font-size: 16px;
   line-height: 20px;
@@ -33,25 +34,30 @@
 
   &--center {
     max-width: 100%;
-    margin-bottom: 11px;
+    margin-bottom: 7px;
     text-align: center;
   }
+}
+
+.product__btn {
+  font-size: 16px;
 }
 
 .product__ico {
   display: block;
   width: 31px;
   height: 31px;
-  margin-top: 1px;
+  margin-top: 4px;
   margin-right: auto;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   margin-left: auto;
   opacity: 0.2;
 }
 
 .product__text {
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,9 +66,9 @@
     min-width: 324px;
     width: 100%;
     min-height: 431px;
-    padding-right: 37px;
+    padding-right: 36px;
     padding-bottom: 40px;
-    padding-left: 36px;
+    padding-left: 38px;
     background-color: $background-color;
 
     &--white {
@@ -80,7 +86,7 @@
     width: 161px;
     height: 172px;
     margin-top: -46px;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
 
     &--big {
       width: 195px;
@@ -97,12 +103,13 @@
   .product__feed-title {
     max-width: 140px;
     margin-right: auto;
+    margin-bottom: 20px;
     margin-left: auto;
     font-size: 20px;
     text-align: center;
 
     &--center {
-      margin-bottom: 28px;
+      margin-bottom: 25px;
     }
   }
 
@@ -110,23 +117,36 @@
     width: 61px;
     height: 61px;
     margin-top: 55px;
-    margin-bottom: 43px;
+    margin-bottom: 49px;
   }
 
   .product__text {
     max-width: 170px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 79px;
+    margin-bottom: 85px;
     line-height: normal;
+    font-size: 16px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  @media (min-width: $desktop-width) {
-    .product {
-      min-width: auto;
-      width: 245px;
-    }
+@media (min-width: $desktop-width) {
+  .product {
+    min-width: auto;
+    width: 245px;
+    padding-right: 37px;
+  }
+
+  .product__btn {
+    padding-bottom: 10px;
+    line-height: 19px;
+  }
+
+  .product__ico {
+    margin-bottom: 47px;
+  }
+
+  .product__text {
+    margin-bottom: 86px;
   }
 }
