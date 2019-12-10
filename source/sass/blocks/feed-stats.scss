@@ -1,11 +1,13 @@
 .feed-stats {
-  width: 100%;
+  width: 102%;
   font-size: 12px;
   line-height: 16px;
   border-collapse: collapse;
 }
 
 .feed-stats__cell {
+  line-height: 14px;
+
   &:last-child {
     text-align: right;
   }
@@ -19,8 +21,9 @@
   }
 
   .feed-stats__cell {
-    padding-top: 6px;
+    padding-top: 7px;
     padding-bottom: 6px;
     border-bottom: 1px solid $border-color--dark;
+    line-height: 18px;
   }
 }

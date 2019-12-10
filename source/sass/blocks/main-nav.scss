@@ -1,13 +1,12 @@
-.header__toggle {
-  width: 25px;
-  height: 19px;
-  border: none;
-  background: url("../img/icon-mobile-menu.svg");
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    &--closed {
+      display: none;
+    }
+  }
 
-  &--active {
-    width: 19px;
-    height: 19px;
-    background: url("../img/icon-close.svg");
+  .main-nav--nojs {
+    display: block;
   }
 }
 

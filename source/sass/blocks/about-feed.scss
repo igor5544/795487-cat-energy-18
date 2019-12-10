@@ -1,10 +1,10 @@
 .about-feed {
-  padding-top: 16px;
+  padding-top: 10px;
   padding-bottom: 42px;
 }
 
 .about-feed__title {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .about-feed__list {
@@ -12,36 +12,67 @@
 }
 
 .about-feed__item {
+  position: relative;
   padding-left: 80px;
-  margin-top: 20px;
+  margin-top: 26px;
 
   &:first-child {
     margin-top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $decoration-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--substance::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--water::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--food::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--time::before {
+    background-image: url("../img/advantage-clock@1x.png");
   }
 }
 
 @media (min-width: $tablet-width) {
   .about-feed {
-    padding-top: 26px;
+    padding-top: 23px;
     padding-bottom: 55px;
     border-bottom: 1px solid $border-color--light;
   }
 
   .about-feed__title {
-    margin-bottom: 63px;
+    margin-bottom: 74px;
   }
 
   .about-feed__list {
     display: flex;
     flex-wrap: wrap;
+    counter-reset: section;
   }
 
   .about-feed__item {
-    max-width: 244px;
+    counter-increment: section;
+    max-width: 245px;
     width: 100%;
     min-height: 231px;
     padding-left: 0;
-    margin-right: 147px;
+    margin-right: 138px;
     margin-top: 0;
 
     &:nth-of-type(2n) {
@@ -51,26 +82,43 @@
     &:nth-of-type(n + 3) {
       margin-top: 87px;
     }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(section);
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 130px;
+      color: $text-color--lighter;
+      font-size: 281px;
+      line-height: 201px;
+      z-index: -1;
+    }
   }
 
   .about-feed__text {
-    padding-top: 117px;
+    padding-top: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-feed {
-    padding-top: 39px;
-    padding-bottom: 45px;
+    padding-top: 36px;
+    padding-bottom: 36px;
     border-bottom: none;
   }
 
   .about-feed__item {
-    margin-right: 78px;
+    margin-right: 80px;
     margin-top: 0;
 
     &:nth-of-type(2n) {
-      margin-right: 78px;
+      margin-right: 80px;
     }
 
     &:nth-of-type(4n) {
