@@ -2,6 +2,10 @@
   line-height: 14px;
 }
 
+.cost__name {
+  margin-left: -4px;
+}
+
 .cost__price {
   text-align: right;
 }
@@ -18,8 +22,16 @@
     line-height: 20px;
   }
 
+  .cost__wrapper {
+    position: relative;
+    min-width: auto;
+  }
+
   .cost__name {
-    padding-right: 52px;
+    position: absolute;
+    text-align: right;
+    right: 95px;
+    min-width: 165px;
   }
 }
 
@@ -29,6 +41,15 @@
   }
 
   .cost__name {
+    position: static;
+    padding-left: 3px;
     padding-right: 0;
+    text-align: left;
+  }
+
+  .cost__price {
+    min-width: 45px;
+    margin-right: -1px;
+    text-align: left;
   }
 }

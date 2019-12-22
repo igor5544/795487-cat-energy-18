@@ -1,6 +1,6 @@
 .аdditional-product__title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -8,7 +8,11 @@
 }
 
 .аdditional-product__cost {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+}
+
+.аdditional-product__btn {
+  letter-spacing: 0.75px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,6 +25,15 @@
   .аdditional-product__title {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .аdditional-product__cost {
+    margin-right: -3px;
+  }
+
+  .аdditional-product__btn {
+    margin-left: -1px;
+    letter-spacing: 0;
   }
 }
 
@@ -48,5 +61,7 @@
 
   .аdditional-product__btn {
     max-width: 245px;
+    margin-top: -3px;
+    margin-right: 2px;
   }
 }

@@ -16,8 +16,9 @@
 }
 
 .company-link__ico {
-  width: 37px;
-  height: 37px;
+  width: 42px;
+  height: 40px;
+  margin-right: -8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,6 +27,7 @@
   }
 
   .company-link__text {
-    margin-right: 13px;
+    margin-right: 16px;
+    margin-top: -7px;
   }
 }

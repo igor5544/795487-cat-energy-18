@@ -1,0 +1,52 @@
+.title-decor {
+  position: relative;
+  max-width: max-content;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: $background-color--clean;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    width: 100vw;
+    height: 3px;
+    background-color: $decoration-color;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title-decor {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 100%;
+      width: 100vw;
+      height: 3px;
+      background-color: $decoration-color;
+      z-index: -1;
+    }
+
+    &::after {
+      top: 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .аdditional-catalog__title {
+    &::before {
+      right: 110.4%;
+    }
+
+    &::after {
+      left: 41.7%;
+    }
+  }
+}

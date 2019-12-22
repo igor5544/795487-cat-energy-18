@@ -3,9 +3,15 @@
 }
 
 .form-list__item {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__item {
+    margin-bottom: 29px;
   }
 }
