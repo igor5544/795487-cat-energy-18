@@ -33,8 +33,7 @@
 }
 
 .form__title {
-  display: flex;
-  flex-direction: column;
+  padding-right: 22px;
   margin-top: 18px;
   margin-bottom: 29px;
   text-transform: none;
@@ -56,6 +55,7 @@
   }
 
   &--castom {
+    padding: 10px 20px;
     padding-left: 46px;
   }
 
@@ -80,6 +80,11 @@
   &:checked + .form__field-title::before {
     background-image: radial-gradient(circle, $decoration-color 5.5px, $background-color--clean 6.5px);
   }
+
+  &:focus + .form__field-title--castom::before {
+    border-color: $fild-color--active;
+    border-width: 2px;
+  }
 }
 
 .form__additional-checkbox {
@@ -88,6 +93,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75%;
+  }
+
+  &:focus + .form__field-title--castom::before {
+    border-color: $fild-color--active;
+    border-width: 2px;
   }
 }
 
@@ -103,15 +113,16 @@
   }
 
   &:active,
-  &:focus {
+  &:focus,
+  &--error {
     border-color: $fild-color--active;
+    padding: 12px 13px;
     border-width: 2px;
     outline: none;
   }
 
   &--error {
     border-color: $fild-color--error;
-    border-width: 2px;
   }
 }
 
@@ -139,7 +150,7 @@
   width: 100%;
   height: 150px;
   resize: none;
-  padding: 12px 13.8px;
+  padding: 12px 13px;
   border: 1px solid $gray--silver;
   margin-top: 5px;
   margin-bottom: 26px;
@@ -149,6 +160,13 @@
   &::placeholder {
     text-transform: uppercase;
     color: $placeholder-color;
+  }
+
+  &:focus {
+    border-color: $fild-color--active;
+    outline: none;
+    border-width: 2px;
+    padding: 11px 12px;
   }
 }
 
@@ -187,7 +205,7 @@
 
     &--radio {
       max-height: 196px;
-      padding: 34px 0 33px 28px;
+      padding: 34px 0 33px 8px;
       margin-top: 61px;
       margin-bottom: 76px;
     }
@@ -198,12 +216,15 @@
   }
 
   .form__title {
-    display: block;
     padding-right: 39px;
     padding-left: 40px;
     margin-top: 55px;
     margin-left: -40px;
     margin-bottom: 71px;
+
+    br {
+      display: none;
+    }
   }
 
   .form__field-wrapper {
@@ -215,6 +236,10 @@
     margin-left: 19px;
     font-size: 20px;
     line-height: 20px;
+
+    &:focus {
+      padding: 9px 16px;
+    }
   }
 
   .form__contacts-wrapper .form__field {
@@ -243,7 +268,16 @@
     }
 
     &--castom {
+      padding: 15px 25px;
       padding-left: 59px;
+    }
+
+    &--radio::before {
+      left: 20px;
+    }
+
+    &--radio {
+      padding-left: 79px;
     }
   }
 
@@ -259,18 +293,26 @@
     margin-bottom: 60px;
     font-size: 20px;
     line-height: 20px;
+
+    &:focus {
+      padding: 14px 18px;
+    }
   }
 
   .form__checkbox-list {
     display: flex;
     flex-wrap: wrap;
     margin-top: -4px;
-    margin-right: -55px;
   }
 
   .form__checkbox-item {
-    width: 50%;
+    width: 40%;
     margin-bottom: 48px;
+    margin-right: 92px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .form__additional-checkbox {

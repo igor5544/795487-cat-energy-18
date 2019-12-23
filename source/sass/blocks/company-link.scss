@@ -18,16 +18,16 @@
 .company-link__ico {
   width: 42px;
   height: 40px;
-  margin-right: -8px;
 }
 
 @media (min-width: $tablet-width) {
   .company-link {
     padding-top: 0;
+    align-items: flex-start;
   }
 
   .company-link__text {
-    margin-right: 16px;
-    margin-top: -7px;
+    margin-top: 11px;
+    margin-right: 8px;
   }
 }

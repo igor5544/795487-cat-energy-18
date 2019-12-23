@@ -23,15 +23,17 @@
   }
 
   .cost__wrapper {
-    position: relative;
     min-width: auto;
   }
 
   .cost__name {
-    position: absolute;
     text-align: right;
-    right: 95px;
+    padding-right: 49px;
     min-width: 165px;
+  }
+
+  .cost__price {
+    min-width: 47px;
   }
 }
 
@@ -41,7 +43,6 @@
   }
 
   .cost__name {
-    position: static;
     padding-left: 3px;
     padding-right: 0;
     text-align: left;
@@ -49,7 +50,6 @@
 
   .cost__price {
     min-width: 45px;
-    margin-right: -1px;
     text-align: left;
   }
 }
