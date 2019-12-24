@@ -1,3 +1,7 @@
+.section-wrapper {
+  overflow: hidden;
+}
+
 .section-wrapper__special {
   margin-top: 35px;
   margin-bottom: 35px;
@@ -6,15 +10,15 @@
 @media (min-width: $tablet-width) {
   .section-wrapper__special {
     margin-top: 34px;
-    margin-bottom: 76px;
+    margin-bottom: 78px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .section-wrapper {
+  .section-wrapper__inner {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 86px;
   }
 

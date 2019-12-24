@@ -1,31 +1,33 @@
 .аdditional-catalog {
-  padding-top: 31px;
+  padding-top: 28px;
   padding-bottom: 4px;
 }
 
 .аdditional-catalog__title {
+  padding-right: 22px;
   margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+  margin-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
   .аdditional-catalog {
-    padding-top: 36px;
+    padding-top: 31px;
     padding-bottom: 34px;
   }
 
   .аdditional-catalog__title {
-    margin-bottom: 75px;
-    font-size: 36px;
-    line-height: 36px;
+    padding-right: 37px;
+    margin-bottom: 80px;
+    padding-left: 37px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .аdditional-catalog {
     padding: 0;
+  }
+
+  .аdditional-catalog__title {
+    padding-left: 0;
   }
 }

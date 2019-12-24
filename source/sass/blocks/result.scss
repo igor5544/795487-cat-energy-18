@@ -1,23 +1,23 @@
 .result {
-  padding-top: 33px;
-  padding-bottom: 38px;
+  padding-top: 17px;
+  padding-bottom: 32px;
   background-color: $background-color;
 }
 
 .result__title {
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .result__text {
   max-width: 266px;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .result__counter-list {
   @include reset-list;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .result__counter-item {
@@ -31,6 +31,7 @@
   width: 124px;
   min-height: 56px;
   border: 1px solid $border-color--dark;
+  border-radius: 3px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 24px;
@@ -40,10 +41,10 @@
 
 .result__border-text {
   position: absolute;
-  bottom: -15px;
+  bottom: -16px;
   left: 50%;
   max-width: 87px;
-  padding-right: 15px;
+  padding-right: 17px;
   padding-left: 15px;
   background-color: $background-color;
   font-size: 12px;
@@ -53,19 +54,20 @@
 }
 
 .result__cost {
-  margin-bottom: 44px;
+  margin-bottom: 34px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .result__image-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .result__image {
-  width: 311px;
-  height: 232px;
+  min-width: 320px;
+  min-height: 240px;
+  margin-left: -20px;
   display: none;
 
   &--active {
@@ -74,20 +76,34 @@
 }
 
 .result__btn {
+  padding: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
   border: none;
+  border-bottom: 1px dotted $border-color--dark-lighter;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: transparent;
+
+  &:hover {
+    border-bottom: 1px solid $border-color--dark-light;
+  }
+
+  &:active {
+    border: none;
+  }
 }
 
 .result__range-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 6px;
 }
 
 .result__range-bar {
+  position: relative;
   width: 84px;
   height: 14px;
   border: 1px solid $border-color--dark;
@@ -97,16 +113,29 @@
   margin-left: 18px;
 }
 
+.result__range-trigger {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  width: 35px;
+  height: 6px;
+  background-color: $decoration-color;
+  border-radius: 3px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .result {
-    padding-top: 51px;
+    padding-top: 43px;
     padding-bottom: 0;
     background-color: $background-color--clean;
-    background-image: linear-gradient(to bottom, $background-color--clean 57.3%, transparent 57.3%), linear-gradient(to right, $background-color 50%, $background-color--middle 50%);
+    background-image: linear-gradient(to bottom, $background-color--clean 57.3%, transparent 57.3%),
+      linear-gradient(to right, $background-color 50%, $background-color--middle 50%);
   }
 
   .result__title {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 
   .result__text-wrapper {
@@ -114,13 +143,13 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 211px;
+    margin-bottom: 92px;
   }
 
   .result__text {
     max-width: 100%;
     margin-right: 10px;
-    margin-bottom: 56px;
+    margin-bottom: 51px;
   }
 
   .result__counter-list {
@@ -139,7 +168,7 @@
     min-width: fit-content;
     padding-right: 8px;
     padding-left: 8px;
-    bottom: -6px;
+    bottom: -7px;
     font-size: 14px;
     line-height: 14px;
     background-color: $background-color--clean;
@@ -147,29 +176,39 @@
 
   .result__cost {
     max-width: 175px;
+    min-height: 50px;
+    margin: 0;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 20px;
     text-align: right;
   }
 
   .result__cat-wrapper {
-    max-height: 462px;
-    padding-bottom: 75px;
-    background-image: linear-gradient(to right, $background-color 50%, $background-color--middle 50%);
+    padding-bottom: 70px;
+    background-image: linear-gradient(to bottom, $background-color--clean 22.1%, transparent 22.1%),
+      linear-gradient(to right, $background-color 50%, $background-color--middle 50%);
   }
 
   .result__image-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
   }
 
   .result__image {
     width: 636px;
-    height: 517px;
-    margin-top: -169px;
+  }
+
+  .result__range-wrapper {
+    margin-left: 0;
   }
 
   .result__btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 20px;
   }
 
@@ -179,18 +218,42 @@
     height: 6px;
     border: none;
     border-radius: 2.5px;
+    margin-right: 22px;
+    margin-left: 22px;
     background-color: $background-color--decor;
+  }
+
+  .result__range-trigger {
+    width: 34px;
+    height: 34px;
+    border: 1px solid $border-color--decore;
+    top: 50%;
+    left: 46.5%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px $btn-shadow;
+    background-color: transparent;
+    background-image: radial-gradient(circle, $decoration-color 3.5px, $background-color--clean 4.5px);
+
+    &:hover {
+      box-shadow: 0 3px 5px $btn-shadow--hover;
+    }
+
+    &:active {
+      border: 2px solid $decoration-color;
+      box-shadow: 0 4px 5px $btn-shadow--active;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .result {
-    padding-top: 45px;
-    background-image: linear-gradient(to bottom, $background-color--clean 27.2%, transparent 27.2%), linear-gradient(to right, $background-color 80%, $background-color--middle 80%);
+    padding-top: 41px;
+    background-image: linear-gradient(to bottom, $background-color--clean 27.2%, transparent 27.2%),
+      linear-gradient(to right, $background-color 80%, $background-color--middle 80%);
   }
 
   .result__title {
-    margin-bottom: 66px;
+    margin-bottom: 83px;
   }
 
   .result__wrapper {
@@ -205,8 +268,9 @@
   }
 
   .result__text {
-    max-width: 430px;
-    margin-top: 76px;
+    max-width: 434px;
+    margin-top: 63px;
+    margin-bottom: 66px;
   }
 
   .result__counter-list {
@@ -218,18 +282,21 @@
   }
 
   .result__cost {
-    display: flex;
-    justify-content: space-between;
-    max-width: 330px;
+    flex-direction: row;
+    max-width: 327px;
     text-align-last: left;
   }
 
   .result__cat-wrapper {
-    padding-top: 76px;
-    padding-bottom: 75px;
+    background-image: linear-gradient(to right, $background-color 53.8%, $background-color--middle 53.8%);
   }
 
-  .result__image {
-    margin-top: -253px;
+  .result__image-wrapper {
+    margin-top: -144px;
+    margin-bottom: 36px;
+  }
+
+  .result__range-wrapper {
+    margin-left: 44px;
   }
 }
