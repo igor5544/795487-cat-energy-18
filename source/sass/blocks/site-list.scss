@@ -28,6 +28,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 8px;
   }
 
   .site-list__item {
@@ -69,6 +70,7 @@
     justify-content: flex-end;
     background-color: transparent;
     max-width: 590px;
+    margin-top: 16px;
 
     &--light .site-list__link {
       color: $text-color--dark-side;
