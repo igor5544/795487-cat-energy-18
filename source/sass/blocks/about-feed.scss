@@ -49,6 +49,30 @@
   }
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about-feed__item {
+    &::before {
+      background-size: 83%;
+    }
+
+    &--substance::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+
+    &--water::before {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+
+    &--food::before {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+
+    &--time::before {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .about-feed {
     padding-top: 23px;
@@ -103,6 +127,14 @@
 
   .about-feed__text {
     padding-top: 110px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about-feed__item {
+      &::before {
+        background-size: 63%;
+      }
+    }
   }
 }
 

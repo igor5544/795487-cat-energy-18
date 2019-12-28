@@ -15,7 +15,11 @@
     <div class="header__wrapper">
       <div class="header__inner">
         <a class="header__logo">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип cat energy">
+          </picture>
         </a>
         <button type="button" class="header__toggle header__toggle--nojs"
           aria-label="Открывает/закрывает главное меню"></button>
@@ -46,8 +50,12 @@
         <h1 class="banner__title">Функциональное питание для котов</h1>
         <div class="banner__slogan">Занялся собой? Займись котом!</div>
         <div class="banner__content-wrapper">
-          <img class="banner__feed-image" src="img/index-can-mobile@1x.png" width="280" height="270"
-            alt="Корм cat energy со вкусом курицаы, оранжевого цвета">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <img class="banner__feed-image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+              width="280" height="270" alt="Корм cat energy со вкусом курицаы, оранжевого цвета">
+          </picture>
           <a href="form.html" class="banner__btn main-btn">Подобрать программу</a>
         </div>
       </div>
@@ -154,7 +162,7 @@
             <button type="button" class="result__btn">
               Было
             </button>
-            <div class="result__range-bar"><div class="result__range-trigger" tabindex="0"></div></div>
+            <div class="result__range-bar"><button class="result__range-trigger"></button></div>
             <button type="button" class="result__btn">
               Стало
             </button>

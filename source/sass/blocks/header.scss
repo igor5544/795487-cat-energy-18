@@ -63,7 +63,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 28px;
+    margin-top: 24px;
+    margin-bottom: 4px;
   }
 
   .header__inner {
@@ -102,8 +103,9 @@
   .header__wrapper {
     @include container--desktop;
     align-items: flex-start;
-    padding-top: 70px;
     margin-top: 0;
+    margin-bottom: 16px;
+    padding-top: 54px;
   }
 
   .header__logo-image {
