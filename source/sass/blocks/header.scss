@@ -102,10 +102,10 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .header {
-    &--big-bg::before {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      &--big-bg::before {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
-  }
   }
 
   .header__wrapper {
