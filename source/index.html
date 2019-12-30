@@ -153,10 +153,18 @@
         </div>
         <div class="result__cat-wrapper">
           <div class="result__image-wrapper">
-            <img class="result__image result__image--before result__image--active" src="img/before-mobile@1x.png"
-              alt="Кот до - полный" width="311" height="232">
-            <img class="result__image result__image--after" src="img/after-mobile@1x.png" alt="Кот после - стройный"
-              width="311" height="232">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png img/before-tablet@2x.png 2x">
+              <img class="result__image result__image--before result__image--active" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" alt="Кот до - полный" width="311" height="232">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+              <img class="result__image result__image--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" alt="Кот после - стройный" width="311" height="232">
+            </picture>
           </div>
           <div class="result__range-wrapper">
             <button type="button" class="result__btn">
@@ -189,8 +197,12 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png"
-          alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="363">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+            alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="363">
+        </picture>
       </div>
 
     </section>

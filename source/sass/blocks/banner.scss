@@ -1,9 +1,20 @@
 .banner {
   padding-top: 27px;
   padding-bottom: 11px;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, transparent 62.5%, $background-color--clean 62.5%), linear-gradient(to right, $background-color--green-first 62.5%, $background-color--green-second 62.5%);
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(to bottom, transparent 62.5%, $background-color--clean 62.5%),
+    linear-gradient(to right, $background-color--green-first 62.5%, $background-color--green-second 62.5%);
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .banner {
+    background-image: url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(to bottom, transparent 62.5%, $background-color--clean 62.5%),
+      linear-gradient(to right, $background-color--green-first 62.5%, $background-color--green-second 62.5%);
+    background-size: 59.3%, 100%, 100%;
+  }
 }
 
 .banner__title {
