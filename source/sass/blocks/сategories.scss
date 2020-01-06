@@ -63,15 +63,17 @@
 }
 
 .categories__text {
-  max-width: 230px;
-  margin-bottom: 23px;
+  padding-right: 8px;
+  border-bottom: 1px solid $border-color--dark;
+  padding-bottom: 23px;
 }
 
 .categories__link {
   display: block;
   position: relative;
+  max-width: max-content;
   padding-top: 19px;
-  border-top: 1px solid $border-color--dark;
+  margin-right: 60px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -82,7 +84,7 @@
     content: "";
     position: absolute;
     top: 21px;
-    left: 96px;
+    left: calc(100% + 11px);
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -133,6 +135,7 @@
   }
 
   .categories__title {
+    max-width: 390px;
     padding-left: 0;
     margin-bottom: 26px;
     font-size: 36px;
@@ -140,16 +143,16 @@
   }
 
   .categories__text {
-    max-width: 372px;
-    margin-bottom: 55px;
+    border: none;
+    max-width: 382px;
+    margin-bottom: 32px;
 
     &--short {
-      max-width: 340px;
+      max-width: 350px;
     }
   }
 
   .categories__link {
-    max-width: max-content;
     padding-top: 0;
     border: none;
     font-size: 20px;
@@ -157,7 +160,7 @@
 
     &::after {
       top: 4px;
-      left: 122%;
+      left: calc(100% + 23px);
       width: 25px;
       height: 12px;
     }
@@ -176,7 +179,7 @@
   }
 
   .categories__item {
-    min-width: 570px;
+    width: 570px;
     min-height: 372px;
     padding-bottom: 61px;
     margin-right: 80px;
@@ -218,7 +221,7 @@
   }
 
   .categories__text {
-    max-width: 462px;
-    margin-bottom: 32px;
+    max-width: 470px;
+    margin-bottom: 8px;
   }
 }

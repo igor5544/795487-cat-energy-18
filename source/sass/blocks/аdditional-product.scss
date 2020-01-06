@@ -19,10 +19,12 @@
   .additional-product__info-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 8px;
   }
 
   .аdditional-product__title {
+    margin-bottom: 18px;
     font-size: 20px;
     line-height: 20px;
   }

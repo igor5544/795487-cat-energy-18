@@ -2,7 +2,7 @@
   padding-top: 27px;
   padding-bottom: 11px;
   background-image: url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(to bottom, transparent 62.5%, $background-color--clean 62.5%),
+    linear-gradient(to bottom, transparent 62.2%, $background-color--clean 62.2%),
     linear-gradient(to right, $background-color--green-first 62.5%, $background-color--green-second 62.5%);
   background-position: center top;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     background-image: url("../img/index-background-mobile@2x.jpg"),
       linear-gradient(to bottom, transparent 62.5%, $background-color--clean 62.5%),
       linear-gradient(to right, $background-color--green-first 62.5%, $background-color--green-second 62.5%);
-    background-size: 59.3%, 100%, 100%;
+    background-size: 320px, 100%, 100%;
   }
 }
 
@@ -106,6 +106,7 @@
   }
 
   .banner__slogan {
+    max-width: 450px;
     margin-bottom: 53px;
     margin-left: 80px;
   }

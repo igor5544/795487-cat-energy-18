@@ -1,5 +1,12 @@
 .section-wrapper {
+  padding-top: 28px;
   overflow: hidden;
+}
+
+.section-wrapper__title {
+  padding-right: 22px;
+  margin-top: 0;
+  margin-bottom: 6px;
 }
 
 .section-wrapper__special {
@@ -8,13 +15,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .section-wrapper {
+    padding-top: 31px;
+  }
+
   .section-wrapper__special {
     margin-top: 34px;
     margin-bottom: 78px;
   }
+
+  .section-wrapper__title {
+    padding-right: 37px;
+    margin-bottom: 49px;
+    padding-left: 37px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .section-wrapper {
+    padding-top: 35px;
+  }
+
   .section-wrapper__inner {
     display: flex;
     justify-content: space-between;
@@ -22,8 +43,22 @@
     padding-bottom: 86px;
   }
 
+  .section-wrapper__title {
+    max-width: 897px;
+    width: max-content;
+    padding-left: 0;
+    margin-bottom: 45px;
+
+    &::before {
+      right: 110.4%;
+    }
+
+    &::after {
+      left: 41.7%;
+    }
+  }
+
   .section-wrapper__special {
     margin: 0;
-    margin-top: 112px;
   }
 }
