@@ -1,12 +1,16 @@
 .main-title {
   margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 44px;
   font-weight: 400;
 }
 
 @media (min-width: $tablet-width) {
   .main-title {
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 60px;
     line-height: 60px;
   }

@@ -46,12 +46,32 @@
   }
 }
 
+.contacts__google-map {
+  position: absolute;
+  width: 100%;
+  height: 363px;
+  z-index: 10;
+}
+
 .contacts__map-image {
   display: block;
   position: relative;
   min-width: 320px;
   width: 100%;
   height: 363px;
+  object-fit: cover;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .contacts__map .contacts__map-image {
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .contacts__map .contacts__map-image {
+      background-image: url("../img/bg-map-mobile@2x.png");
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -60,6 +80,7 @@
     padding-right: 42px;
     padding-bottom: 56px;
     padding-left: 41px;
+    z-index: 15;
   }
 
   .contacts__text {
@@ -86,8 +107,24 @@
     }
   }
 
+  .contacts__google-map {
+    height: 400px;
+  }
+
   .contacts__map-image {
     height: 400px;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .contacts__map .contacts__map-image {
+      background-image: url("../img/bg-map-tablet@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .contacts__map .contacts__map-image {
+        background-image: url("../img/bg-map-tablet@2x.png");
+      }
+    }
   }
 }
 
@@ -98,20 +135,35 @@
 
   .contacts__text-wrapper {
     position: absolute;
-    top: 95px;
+    top: 48%;
     max-width: 570px;
     width: 100%;
     padding-right: 90px;
     padding-left: 76px;
     background-color: $background-color--clean;
+    transform: translateY(-50%);
   }
 
   .contacts__address {
     text-align: left;
   }
 
-  .contacts__map::before {
-    top: 150px;
-    left: 69.75%;
+  .contacts__map {
+    &::before {
+      top: 150px;
+      left: 69.75%;
+    }
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .contacts__map .contacts__map-image {
+      background-image: url("../img/bg-map-desktop@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .contacts__map .contacts__map-image {
+        background-image: url("../img/bg-map-desktop@2x.png");
+      }
+    }
   }
 }

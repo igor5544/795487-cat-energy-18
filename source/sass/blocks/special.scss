@@ -35,6 +35,13 @@
     align-items: flex-start;
     min-height: 200px;
     padding-top: 66px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .special {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .special__ico {
@@ -57,6 +64,13 @@
     min-width: 245px;
     min-height: 100%;
     padding: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .special {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .special__ico {

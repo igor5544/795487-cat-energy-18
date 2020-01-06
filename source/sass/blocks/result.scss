@@ -17,20 +17,24 @@
   @include reset-list;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  flex-wrap: wrap;
 }
 
 .result__counter-item {
+  display: flex;
+  justify-content: center;
   position: relative;
+  border: 1px solid $border-color--dark;
+  margin-bottom: 22px;
 }
 
 .result__counter {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 124px;
-  min-height: 56px;
-  border: 1px solid $border-color--dark;
+  width: 122px;
+  min-height: 54px;
+  padding: 10px;
   border-radius: 3px;
   margin-top: 0;
   margin-bottom: 0;
@@ -41,7 +45,7 @@
 
 .result__border-text {
   position: absolute;
-  bottom: -16px;
+  top: calc(100% - 7px);
   left: 50%;
   max-width: 87px;
   padding-right: 17px;
@@ -131,7 +135,7 @@
     padding-top: 43px;
     padding-bottom: 0;
     background-color: $background-color--clean;
-    background-image: linear-gradient(to bottom, $background-color--clean 57.3%, transparent 57.3%),
+    background-image: linear-gradient(to top, transparent 464px, $background-color--clean 464px),
       linear-gradient(to right, $background-color 50%, $background-color--middle 50%);
   }
 
@@ -144,7 +148,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 92px;
+    margin-bottom: 108px;
   }
 
   .result__text {
@@ -158,9 +162,13 @@
     width: 100%;
   }
 
+  .result__counter-item {
+    margin-bottom: 34px;
+  }
+
   .result__counter {
-    width: 162px;
-    min-height: 72px;
+    width: 160px;
+    min-height: 70px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -189,7 +197,7 @@
 
   .result__cat-wrapper {
     padding-bottom: 70px;
-    background-image: linear-gradient(to bottom, $background-color--clean 22.1%, transparent 22.1%),
+    background-image: linear-gradient(to bottom, $background-color--clean 19.8%, transparent 19.8%),
       linear-gradient(to right, $background-color 50%, $background-color--middle 50%);
   }
 
@@ -249,18 +257,17 @@
 @media (min-width: $desktop-width) {
   .result {
     padding-top: 41px;
-    background-image: linear-gradient(to bottom, $background-color--clean 27.2%, transparent 27.2%),
+    background-image: linear-gradient(to bottom, $background-color--clean 175px, transparent 175px),
       linear-gradient(to right, $background-color 80%, $background-color--middle 80%);
   }
 
   .result__title {
-    margin-bottom: 83px;
+    margin-bottom: 76px;
   }
 
   .result__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
   .result__text-wrapper {
@@ -270,12 +277,12 @@
 
   .result__text {
     max-width: 434px;
-    margin-top: 63px;
+    margin-top: 70px;
     margin-bottom: 66px;
   }
 
   .result__counter-list {
-    margin-bottom: 62px;
+    margin-bottom: 27px;
   }
 
   .result__border-text {
@@ -284,8 +291,14 @@
 
   .result__cost {
     flex-direction: row;
-    max-width: 327px;
-    text-align-last: left;
+    justify-content: flex-start;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .result__total-sum {
+    margin-left: 64px;
+    text-align: right;
   }
 
   .result__cat-wrapper {
@@ -294,7 +307,7 @@
 
   .result__image-wrapper {
     margin-top: -144px;
-    margin-bottom: 36px;
+    margin-bottom: 44px;
   }
 
   .result__range-wrapper {

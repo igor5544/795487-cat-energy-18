@@ -73,7 +73,7 @@
 
   .header__logo {
     margin: 0;
-    margin-right: 92px;
+    margin-right: 89px;
   }
 
   .header__logo-image {
@@ -97,6 +97,14 @@
       background-size: cover;
       background-position: center;
       z-index: -1;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header {
+      &--big-bg::before {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 

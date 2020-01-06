@@ -41,8 +41,9 @@
 
 .form__field-title {
   position: relative;
-  white-space: nowrap;
   line-height: 18px;
+  max-width: 150px;
+  min-width: max-content;
 
   &::before {
     content: "";
@@ -55,7 +56,8 @@
   }
 
   &--castom {
-    padding: 10px 20px;
+    display: block;
+    min-width: fit-content;
     padding-left: 46px;
   }
 
@@ -108,6 +110,10 @@
   margin-left: 15px;
   text-transform: uppercase;
 
+  &--ico {
+    padding-right: 40px;
+  }
+
   &::placeholder {
     color: $placeholder-color;
   }
@@ -119,6 +125,10 @@
     padding: 12px 13px;
     border-width: 2px;
     outline: none;
+  }
+
+  &--ico:focus {
+    padding-right: 40px;
   }
 
   &--error {
@@ -204,14 +214,13 @@
     @include container-reset;
 
     &--radio {
-      max-height: 196px;
-      padding: 34px 0 33px 8px;
+      padding: 20px 0 18px 8px;
       margin-top: 61px;
       margin-bottom: 76px;
     }
 
     &:last-of-type .form__title {
-      margin-bottom: 64px;
+      margin-bottom: 39px;
     }
   }
 
@@ -237,8 +246,16 @@
     font-size: 20px;
     line-height: 20px;
 
+    &--ico {
+      padding-right: 45px;
+    }
+
     &:focus {
       padding: 9px 16px;
+    }
+
+    &--ico:focus {
+      padding-right: 45px;
     }
   }
 
@@ -259,6 +276,7 @@
   }
 
   .form__field-title {
+    max-width: 250px;
     font-size: 20px;
     line-height: 20px;
 
@@ -268,7 +286,7 @@
     }
 
     &--castom {
-      padding: 15px 25px;
+      padding: 16px 25px;
       padding-left: 59px;
     }
 
@@ -302,16 +320,21 @@
   .form__checkbox-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -4px;
+    align-items: center;
+    margin-bottom: 16px;
   }
 
   .form__checkbox-item {
     width: 40%;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     margin-right: 92px;
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
     }
   }
 
@@ -353,12 +376,13 @@
   .form__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
   .form__set {
     width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 38px;
 
     &--radio {
       width: 570px;
@@ -379,33 +403,49 @@
     margin-top: 0;
   }
 
+  .form__field-title {
+    &--checkbox {
+      max-width: 200px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
   .form__comment-field {
-    margin-bottom: 6px;
+    margin-bottom: 24px;
   }
 
   .form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .form__contacts-wrapper .form__field-wrapper {
-    margin-bottom: 1px;
+    flex-wrap: wrap;
   }
 
   .form__field-wrapper {
     min-width: 570px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 
   .form__checkbox-list {
-    flex-wrap: nowrap;
-    margin-bottom: -1px;
+    margin-bottom: 0;
   }
 
   .form__checkbox-item {
-    margin-bottom: 0;
+    width: auto;
+    min-width: 245px;
+    margin-top: 17px;
+    margin-right: 80px;
+    margin-bottom: 17px;
 
-    &:not(:first-child) {
-      margin-left: 23px;
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 

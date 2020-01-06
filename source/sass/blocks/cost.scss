@@ -3,6 +3,7 @@
 }
 
 .cost__name {
+  max-width: 50%;
   margin-left: -4px;
 }
 
@@ -24,16 +25,19 @@
 
   .cost__wrapper {
     min-width: auto;
+    align-items: center;
   }
 
   .cost__name {
-    text-align: right;
-    padding-right: 49px;
+    max-width: none;
     min-width: 165px;
+    padding-right: 20px;
+    text-align: right;
   }
 
   .cost__price {
-    min-width: 47px;
+    max-width: 76px;
+    min-width: 76px;
   }
 }
 
@@ -43,6 +47,7 @@
   }
 
   .cost__name {
+    max-width: 220px;
     padding-left: 3px;
     padding-right: 0;
     text-align: left;
@@ -50,6 +55,7 @@
 
   .cost__price {
     min-width: 45px;
+    max-width: 46px;
     text-align: left;
   }
 }

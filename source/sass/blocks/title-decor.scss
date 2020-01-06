@@ -38,15 +38,3 @@
     }
   }
 }
-
-@media (min-width: $desktop-width) {
-  .аdditional-catalog__title {
-    &::before {
-      right: 110.4%;
-    }
-
-    &::after {
-      left: 41.7%;
-    }
-  }
-}
