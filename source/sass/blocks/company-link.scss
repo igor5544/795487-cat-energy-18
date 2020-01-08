@@ -7,6 +7,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .company-link__ico {
+    fill: $ico-color--hover;
+  }
 }
 
 .company-link__text {
@@ -16,6 +20,7 @@
 }
 
 .company-link__ico {
+  fill: $ico-color;
   width: 42px;
   height: 40px;
 }
@@ -29,5 +34,11 @@
   .company-link__text {
     margin-top: 11px;
     margin-right: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .company-link {
+    padding-top: 5px;
   }
 }

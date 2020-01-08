@@ -9,7 +9,7 @@
 }
 
 .result__text {
-  max-width: 266px;
+  max-width: 275px;
   margin-bottom: 24px;
 }
 
@@ -46,7 +46,6 @@
 .result__border-text {
   position: absolute;
   top: calc(100% - 7px);
-  left: 50%;
   max-width: 87px;
   padding-right: 17px;
   padding-left: 15px;
@@ -54,7 +53,13 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  transform: translateX(-50%);
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .result__border-text {
+    right: 17px;
+    left: 17px;
+  }
 }
 
 .result__cost {
@@ -174,13 +179,20 @@
   }
 
   .result__border-text {
-    min-width: fit-content;
+    max-width: 146px;
     padding-right: 8px;
     padding-left: 8px;
     bottom: -7px;
     font-size: 14px;
     line-height: 14px;
     background-color: $background-color--clean;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .result__border-text {
+      right: 7px;
+      left: 7px;
+    }
   }
 
   .result__cost {

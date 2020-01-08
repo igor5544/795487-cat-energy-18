@@ -9,7 +9,7 @@
 
 .categories__item {
   position: relative;
-  padding: 30px 22px 22px 20px;
+  padding: 30px 22px 19px 20px;
   margin-top: 20px;
   background-color: $background-color;
 
@@ -69,10 +69,10 @@
 }
 
 .categories__link {
-  display: block;
+  display: inline-block;
   position: relative;
   max-width: max-content;
-  padding-top: 19px;
+  padding-top: 20px;
   margin-right: 60px;
   font-size: 16px;
   line-height: 16px;
@@ -104,7 +104,7 @@
 
   .categories__item {
     padding-top: 76px;
-    padding-bottom: 62px;
+    padding-bottom: 58px;
     padding-left: 52px;
     margin-top: 30px;
 
@@ -181,7 +181,7 @@
   .categories__item {
     width: 570px;
     min-height: 372px;
-    padding-bottom: 61px;
+    padding-bottom: 58px;
     margin-right: 80px;
     margin-top: 0;
 
@@ -221,7 +221,7 @@
   }
 
   .categories__text {
-    max-width: 470px;
+    max-width: 475px;
     margin-bottom: 8px;
   }
 }

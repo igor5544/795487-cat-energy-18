@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 155px;
+    width: 155px;
     text-align: right;
   }
 
@@ -142,6 +142,10 @@
     padding-left: 76px;
     background-color: $background-color--clean;
     transform: translateY(-50%);
+  }
+
+  .contacts__text {
+    margin-right: 90px;
   }
 
   .contacts__address {

@@ -8,7 +8,7 @@
     @include container-reset;
     padding-top: 25px;
     padding-bottom: 25px;
-    border: 1px solid $border-color--light;
+    border: 1px solid $border-color;
     margin-top: 13px;
     margin-bottom: 30px;
   }
@@ -40,10 +40,10 @@
 }
 
 .form__field-title {
+  display: inline-block;
   position: relative;
   line-height: 18px;
   max-width: 150px;
-  min-width: max-content;
 
   &::before {
     content: "";
@@ -56,9 +56,11 @@
   }
 
   &--castom {
-    display: block;
-    min-width: fit-content;
     padding-left: 46px;
+  }
+
+  &--radio {
+    min-width: 240px;
   }
 
   &--castom::before {
@@ -104,11 +106,13 @@
 }
 
 .form__field {
-  width: 100%;
+  min-height: 46px;
   padding: 13px 14px;
-  border: 1px solid $gray--silver;
+  border: 1px solid $border-color;
   margin-left: 15px;
   text-transform: uppercase;
+  flex-grow: 1;
+  font-size: 16px;
 
   &--ico {
     padding-right: 40px;
@@ -116,6 +120,10 @@
 
   &::placeholder {
     color: $placeholder-color;
+  }
+
+  &:hover {
+    border-color: $border-color--silver;
   }
 
   &:active,
@@ -136,12 +144,20 @@
   }
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form__field {
+    font-size: 13px;
+  }
+}
+
 .form__contacts-wrapper .form__field {
   margin-left: 11px;
 }
 
 .form__ico {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
   &--email {
     right: 15px;
@@ -161,7 +177,7 @@
   height: 150px;
   resize: none;
   padding: 12px 13px;
-  border: 1px solid $gray--silver;
+  border: 1px solid $border-color;
   margin-top: 5px;
   margin-bottom: 26px;
   font-size: 16px;
@@ -170,6 +186,10 @@
   &::placeholder {
     text-transform: uppercase;
     color: $placeholder-color;
+  }
+
+  &:hover {
+    border-color: $border-color--silver;
   }
 
   &:focus {
@@ -241,6 +261,7 @@
   }
 
   .form__field {
+    min-height: 52px;
     padding: 10px 17px;
     margin-left: 19px;
     font-size: 20px;
@@ -250,7 +271,9 @@
       padding-right: 45px;
     }
 
-    &:focus {
+    &:active,
+    &:focus,
+    &--error {
       padding: 9px 16px;
     }
 
@@ -264,8 +287,6 @@
   }
 
   .form__ico {
-    position: absolute;
-
     &--email {
       right: 19px;
     }
@@ -290,12 +311,13 @@
       padding-left: 59px;
     }
 
-    &--radio::before {
-      left: 20px;
+    &--radio {
+      min-width: 340px;
+      padding-left: 79px;
     }
 
-    &--radio {
-      padding-left: 79px;
+    &--radio::before {
+      left: 20px;
     }
   }
 
@@ -405,7 +427,7 @@
 
   .form__field-title {
     &--checkbox {
-      max-width: 200px;
+      width: 215px;
       padding-top: 0;
       padding-bottom: 0;
     }
@@ -447,6 +469,10 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+
+  .form__send-wrapper {
+    margin-top: -5px;
   }
 
   .form__btn {
