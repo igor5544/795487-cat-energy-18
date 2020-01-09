@@ -1,13 +1,14 @@
 objectFitImages();
 
-let headerToggle = document.querySelector('.header__toggle'),
+let headerToggle = document.querySelector('.header__toggle-btn'),
+    toggleIco = document.querySelector('.header__toggle'),
     mainNav = document.querySelector('.main-nav');
 
-headerToggle.classList.remove('header__toggle--nojs');
+toggleIco.classList.remove('header__toggle--nojs');
 mainNav.classList.remove('main-nav--nojs');
 
 headerToggle.addEventListener('click', function () {
-    this.classList.toggle('header__toggle--closed');
+    toggleIco.classList.toggle('header__toggle--closed');
     mainNav.classList.toggle('main-nav--closed');
 });
 

@@ -46,6 +46,7 @@
 }
 
 .product__ico {
+  position: relative;
   display: block;
   width: 31px;
   height: 31px;
@@ -54,6 +55,20 @@
   margin-bottom: 23px;
   margin-left: auto;
   opacity: 0.2;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $ico-color;
+    top: 15px;
+    width: 31px;
+    height: 2px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .product__text {
@@ -121,6 +136,18 @@
     height: 61px;
     margin-top: 55px;
     margin-bottom: 49px;
+
+    &::after,
+    &::before {
+      background-color: $ico-color;
+      top: 30px;
+      width: 61px;
+      height: 1px;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
   }
 
   .product__text {

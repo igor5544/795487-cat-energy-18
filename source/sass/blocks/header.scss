@@ -23,21 +23,67 @@
   }
 }
 
-.header__logo-image {
+.header__logo-desktop,
+.header__logo-tablet {
+  display: none;
+}
+
+.header__logo-mobil {
   width: 191px;
   height: 39px;
 }
 
-.header__toggle {
+.header__toggle-btn {
+  position: relative;
   width: 25px;
   height: 19px;
   border: none;
-  background: url("../img/icon-mobile-menu.svg");
+  background-color: transparent;
+}
+
+.header__toggle {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 25px;
+  height: 3px;
+  background-color: $burger-color;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 3px;
+    background-color: $burger-color;
+  }
+
+  &::after {
+    top: 8px;
+  }
+
+  &::before {
+    bottom: 8px;
+  }
 
   &--closed {
-    width: 19px;
-    height: 19px;
-    background: url("../img/icon-close.svg");
+    left: 0;
+    top: 8px;
+    width: 25px;
+    height: 2px;
+    transform: rotate(45deg);
+  }
+
+  &--closed::after {
+    display: none;
+  }
+
+  &--closed::before {
+    top: 0;
+    width: 25px;
+    height: 2px;
+    transform: rotate(90deg);
   }
 }
 
@@ -64,7 +110,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
   }
 
   .header__inner {
@@ -73,11 +119,16 @@
 
   .header__logo {
     margin: 0;
-    margin-right: 89px;
+    margin-right: 65px;
   }
 
-  .header__logo-image {
-    min-width: 174px;
+  .header__logo-mobile {
+    display: none;
+  }
+
+  .header__logo-tablet {
+    display: block;
+    width: 174px;
     height: 59px;
   }
 }
@@ -112,11 +163,16 @@
     @include container--desktop;
     align-items: flex-start;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
     padding-top: 54px;
   }
 
-  .header__logo-image {
+  .header__logo-tablet {
+    display: none;
+  }
+
+  .header__logo-desktop {
+    display: block;
     width: 203px;
     height: 60px;
   }
