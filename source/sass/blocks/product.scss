@@ -1,5 +1,27 @@
 .product {
   @include container;
+
+  &--ico {
+    position: relative;
+    padding-top: 58px;
+  }
+
+  &--ico::after,
+  &--ico::before {
+    position: absolute;
+    content: "";
+    background-color: $ico-color;
+    top: 15px;
+    right: 50%;
+    width: 31px;
+    height: 2px;
+    opacity: 0.2;
+    transform: translateX(50%);
+  }
+
+  &--ico::before {
+    transform: translateX(50%) rotate(90deg);
+  }
 }
 
 .product__content-wrapper {
@@ -46,6 +68,7 @@
 }
 
 .product__ico {
+  position: relative;
   display: block;
   width: 31px;
   height: 31px;
@@ -54,6 +77,20 @@
   margin-bottom: 23px;
   margin-left: auto;
   opacity: 0.2;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $ico-color;
+    top: 15px;
+    width: 31px;
+    height: 2px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .product__text {
@@ -74,6 +111,17 @@
     &--white {
       border: 1px solid $border-color;
       background-color: $background-color--clean;
+    }
+
+    &--ico {
+      padding-top: 165px;
+    }
+
+    &--ico::after,
+    &--ico::before {
+      top: 84px;
+      width: 61px;
+      height: 2px;
     }
   }
 
@@ -121,6 +169,18 @@
     height: 61px;
     margin-top: 55px;
     margin-bottom: 49px;
+
+    &::after,
+    &::before {
+      background-color: $ico-color;
+      top: 30px;
+      width: 61px;
+      height: 1px;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
   }
 
   .product__text {
@@ -146,6 +206,10 @@
 @media (min-width: $desktop-width) {
   .product {
     width: 245px;
+
+    &--ico {
+      padding-top: 162px;
+    }
   }
 
   .product__ico {

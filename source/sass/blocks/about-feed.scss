@@ -92,7 +92,7 @@
 
   .about-feed__item {
     counter-increment: section;
-    max-width: 245px;
+    max-width: 246px;
     width: 100%;
     min-height: 231px;
     padding-left: 0;
@@ -146,11 +146,11 @@
   }
 
   .about-feed__item {
-    margin-right: 80px;
+    margin-right: 78px;
     margin-top: 0;
 
     &:nth-of-type(2n) {
-      margin-right: 80px;
+      margin-right: 78px;
     }
 
     &:nth-of-type(4n) {

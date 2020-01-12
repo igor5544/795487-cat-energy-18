@@ -9,7 +9,7 @@
 
 .categories__item {
   position: relative;
-  padding: 30px 22px 22px 20px;
+  padding: 30px 22px 19px 20px;
   margin-top: 20px;
   background-color: $background-color;
 
@@ -27,28 +27,23 @@
     border-radius: 50%;
     background-color: $decoration-color;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.categories__ico {
+  position: absolute;
 
-  &--slim::after {
+  &--slim {
     top: 22px;
     left: 30px;
     width: 35px;
     height: 49px;
-    background-image: url("../img/icon-cat-slim.svg");
   }
 
-  &--mass::after {
+  &--mass {
     top: 35px;
     left: 13px;
     width: 67px;
     height: 28px;
-    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -69,10 +64,10 @@
 }
 
 .categories__link {
-  display: block;
+  display: inline-block;
   position: relative;
   max-width: max-content;
-  padding-top: 19px;
+  padding-top: 20px;
   margin-right: 60px;
   font-size: 16px;
   line-height: 16px;
@@ -104,7 +99,7 @@
 
   .categories__item {
     padding-top: 76px;
-    padding-bottom: 62px;
+    padding-bottom: 58px;
     padding-left: 52px;
     margin-top: 30px;
 
@@ -118,15 +113,17 @@
       width: 200px;
       height: 200px;
     }
+  }
 
-    &--slim::after {
+  .categories__ico {
+    &--slim {
       top: 80px;
       left: 475px;
       width: 141px;
       height: 194px;
     }
 
-    &--mass::after {
+    &--mass {
       top: 135px;
       left: 412px;
       width: 268px;
@@ -181,7 +178,7 @@
   .categories__item {
     width: 570px;
     min-height: 372px;
-    padding-bottom: 61px;
+    padding-bottom: 58px;
     margin-right: 80px;
     margin-top: 0;
 
@@ -199,15 +196,17 @@
       width: 100px;
       height: 100px;
     }
+  }
 
-    &--slim::after {
+  .categories__ico {
+    &--slim {
       top: 41px;
       left: 65px;
       width: 71px;
       height: 97px;
     }
 
-    &--mass::after {
+    &--mass {
       top: 69px;
       left: 34px;
       width: 134px;
@@ -221,7 +220,7 @@
   }
 
   .categories__text {
-    max-width: 470px;
+    max-width: 475px;
     margin-bottom: 8px;
   }
 }

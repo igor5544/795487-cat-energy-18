@@ -3,11 +3,13 @@
 }
 
 .cost__name {
-  max-width: 50%;
+  width: 170px;
+  margin-right: 10px;
   margin-left: -4px;
 }
 
 .cost__price {
+  width: 100px;
   text-align: right;
 }
 
@@ -31,13 +33,12 @@
   .cost__name {
     max-width: none;
     min-width: 165px;
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: right;
   }
 
   .cost__price {
-    max-width: 76px;
-    min-width: 76px;
+    width: 76px;
   }
 }
 
@@ -47,15 +48,20 @@
   }
 
   .cost__name {
-    max-width: 220px;
+    width: 220px;
     padding-left: 3px;
     padding-right: 0;
     text-align: left;
   }
 
   .cost__price {
-    min-width: 45px;
-    max-width: 46px;
+    width: 46px;
     text-align: left;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .cost__price {
+      width: 49px;
+    }
   }
 }

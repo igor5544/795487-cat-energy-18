@@ -26,12 +26,18 @@
     margin-top: 15px;
   }
 
-  &:active {
+  &:hover .social__ico {
+    fill: $ico-color--hover;
+  }
+
+  &:active .social__ico {
     opacity: 0.3;
   }
 }
 
 .social__ico {
+  fill: $black--lighter;
+
   &--vkontakte {
     width: 22px;
     height: 12px;
