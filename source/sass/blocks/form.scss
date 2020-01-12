@@ -82,26 +82,31 @@
 
 .form__program-radio {
   &:checked + .form__field-title::before {
-    background-image: radial-gradient(circle, $decoration-color 5.5px, $background-color--clean 6.5px);
+    background-image: radial-gradient(circle, $check-color 5.5px, $background-color--clean 6.5px);
   }
 
   &:focus + .form__field-title--castom::before {
-    border-color: $fild-color--active;
+    border-color: $field-color--active;
     border-width: 2px;
   }
 }
 
 .form__additional-checkbox {
-  &:checked + .form__field-title::before {
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75%;
+  &:focus + .form__field-title--castom::before {
+    border-color: $field-color--active;
+    border-width: 2px;
   }
 
-  &:focus + .form__field-title--castom::before {
-    border-color: $fild-color--active;
-    border-width: 2px;
+  &:checked + .form__field-title::after {
+    content: "";
+    position: absolute;
+    top: 42%;
+    left: 10px;
+    width: 11px;
+    height: 20px;
+    border-bottom: 2px solid $check-color;
+    border-right: 2px solid $check-color;
+    transform: translateY(-50%) rotate(44deg);
   }
 }
 
@@ -129,18 +134,35 @@
   &:active,
   &:focus,
   &--error {
-    border-color: $fild-color--active;
+    border-color: $field-color--active;
     padding: 12px 13px;
     border-width: 2px;
     outline: none;
+  }
+
+  &:active + .form__ico,
+  &:focus + .form__ico {
+    fill: $field-ico--active;
+  }
+
+  &--error:active + .form__ico,
+  &--error:focus + .form__ico {
+    fill: $field-ico--error;
   }
 
   &--ico:focus {
     padding-right: 40px;
   }
 
-  &--error {
-    border-color: $fild-color--error;
+  &--error,
+  &--error:hover,
+  &--error:active,
+  &--error:focus {
+    border-color: $field-color--error;
+  }
+
+  &--error + .form__ico {
+    fill: $field-ico--error;
   }
 }
 
@@ -161,13 +183,13 @@
 
   &--email {
     right: 15px;
-    width: 18px;
+    width: 17px;
     height: 14px;
   }
 
   &--phone {
     right: 13px;
-    width: 21px;
+    width: 20px;
     height: 21px;
   }
 }
@@ -193,7 +215,7 @@
   }
 
   &:focus {
-    border-color: $fild-color--active;
+    border-color: $field-color--active;
     outline: none;
     border-width: 2px;
     padding: 11px 12px;
@@ -323,7 +345,7 @@
 
   .form__program-radio {
     &:checked + .form__field-title::before {
-      background-image: radial-gradient(circle, $decoration-color 8.5px, $background-color--clean 9.5px);
+      background-image: radial-gradient(circle, $check-color 8.5px, $background-color--clean 9.5px);
     }
   }
 
@@ -361,8 +383,8 @@
   }
 
   .form__additional-checkbox {
-    &:checked + .form__field-title::before {
-      background-size: 57%;
+    &:checked + .form__field-title::after {
+      left: 15px;
     }
   }
 
@@ -433,8 +455,20 @@
     }
   }
 
+  .form__additional-checkbox {
+    &:checked + .form__field-title::after {
+      top: 30%;
+    }
+  }
+
   .form__comment-field {
     margin-bottom: 24px;
+  }
+
+  .form__ico {
+    &--phone {
+      right: 18px;
+    }
   }
 
   .form__contacts-wrapper {
