@@ -1,0 +1,24 @@
+.logo-svg__medium,
+.logo-svg__big {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-svg__mini {
+    display: none;
+  }
+
+  .logo-svg__medium {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-svg__medium {
+    display: none;
+  }
+
+  .logo-svg__big {
+    display: block;
+  }
+}

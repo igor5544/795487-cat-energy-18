@@ -49,6 +49,12 @@
     margin-bottom: 0;
   }
 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .special__ico {
+      margin-right: 270px;
+    }
+  }
+
   .special__text {
     margin-top: 7px;
     margin-right: 29px;
@@ -74,7 +80,7 @@
   }
 
   .special__ico {
-    margin-top: 68px;
+    margin-top: 65px;
     margin-right: 0;
   }
 

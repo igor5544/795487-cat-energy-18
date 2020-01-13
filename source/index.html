@@ -71,8 +71,8 @@
         <path fill="#111111" d="M119.8,15.1l-4.9-14.7h3l3.5,11l3.4-11h3l-4.9,14.7v8h-3V15.1z" />
       </g>
     </symbol>
-    <symbol id="logo">
-      <g class="header__logo-svg header__logo-svg--mini">
+    <symbol class="logo-svg" id="logo">
+      <g class="logo-svg__mini">
         <g>
           <path fill="#FDC305"
             d="M6.1,20.7l0.1-2.3c6.7-0.9,13.4-1.4,20.2-1.3c0,0.6,0,1.2-0.1,1.8c0,0,2.9-1.3,6-1.8    c-2.4-6.3-8.5-10.8-15.6-10.8c-8.3,0-15.2,6.1-16.5,14.1C2.4,20.5,6.1,20.7,6.1,20.7z" />
@@ -112,7 +112,7 @@
           <path fill="#444444" d="M94.3,11.6L90.4,0.2h2.3l2.7,8.5l2.7-8.5h2.3l-3.8,11.4v6.2h-2.4V11.6z" />
         </g>
       </g>
-      <g class="header__logo-svg header__logo-svg--medium">
+      <g class="logo-svg__medium">
         <path fill="#FDC305" d="M59.6,21.7C54.2,8.7,39.3,2.6,26.3,8S7.1,28.4,12.6,41.4c3.6,8.5,11.3,14.1,19.8,15.4c-0.6-2.1-1.2-4.4-1.7-6.8
                         c1.5,1,3.1,1.8,4.7,2.5c0,0,0,0,0,0c0,0,0.1,2.1,0.3,4.5c1.8,0,3.5-0.1,5.3-0.5c0-0.2,0-0.4,0-0.8c0.3-1.9,1.1-5.2,1.2-7.4
                         c1.1-1.1,2.1-2.3,2.9-3.7c0,0,0,0,0,0c0,0.1,0,0.3-0.1,0.4c-0.6,4.2-1.7,8.8-2.4,10c-0.2,0.4-0.5,0.9-0.8,1.1
@@ -178,7 +178,7 @@
           <path fill="#444444" d="M167.1,32.9l-3.2-9.6h1.9l2.3,7.2l2.2-7.2h2l-3.2,9.6v5.3h-2V32.9z" />
         </g>
       </g>
-      <g class="header__logo-svg header__logo-svg--big">
+      <g class="logo-svg__big">
         <path fill="#FDC305" d="M59.9,24c-5.5-13-20.5-19.2-33.5-13.8S7.2,30.7,12.6,43.7c3.6,8.6,11.3,14.2,19.9,15.5
                       c-0.6-2.1-1.2-4.4-1.7-6.9c1.5,1,3.1,1.8,4.8,2.6c0,0,0,0,0,0c0,0,0.1,2.2,0.3,4.6c1.8,0,3.6-0.1,5.3-0.5c0-0.2,0-0.4,0-0.8
                       c0.3-1.9,1.1-5.2,1.2-7.4c1.1-1.1,2.1-2.3,2.9-3.7c0,0,0,0,0,0c0,0.1,0,0.3-0.1,0.4c-0.6,4.3-1.7,8.8-2.4,10.1
@@ -422,12 +422,22 @@
         <div class="result__cat-wrapper">
           <div class="result__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/webp/before-desktop@1x.webp, img/webp/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/before-tablet@1x.webp, img/webp/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/before-mobile@1x.webp, img/webp/before-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
               <img class="result__image result__image--before result__image--active" src="img/before-mobile@1x.png"
                 srcset="img/before-mobile@2x.png 2x" alt="Кот до - полный" width="311" height="232">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/webp/after-desktop@1x.webp, img/webp/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/after-tablet@1x.webp, img/webp/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/after-mobile@1x.webp, img/webp/after-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
               <img class="result__image result__image--after" src="img/after-mobile@1x.png"
@@ -467,6 +477,11 @@
       <div class="contacts__map">
         <div class="contacts__google-map"></div>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/webp/bg-map-desktop@1x.webp, img/webp/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/webp/bg-map-tablet@1x.webp, img/webp/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp, img/webp/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"

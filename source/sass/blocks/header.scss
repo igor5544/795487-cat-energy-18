@@ -23,18 +23,6 @@
   }
 }
 
-.header__logo-desktop,
-.header__logo-tablet {
-  display: none;
-}
-
-.header__logo-svg {
-  &--medium,
-  &--big {
-    display: none;
-  }
-}
-
 .header__logo-ico {
   width: 191px;
   height: 39px;
@@ -133,20 +121,6 @@
     margin-right: 40px;
   }
 
-  .header__logo-mobile {
-    display: none;
-  }
-
-  .header__logo-svg {
-    &--mini {
-      display: none;
-    }
-
-    &--medium {
-      display: block;
-    }
-  }
-
   .header__logo-ico {
     width: 174px;
     height: 59px;
@@ -185,10 +159,6 @@
     margin-top: 0;
     margin-bottom: 16px;
     padding-top: 54px;
-  }
-
-  .header__logo-tablet {
-    display: none;
   }
 
   .header__logo-svg {
