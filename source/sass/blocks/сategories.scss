@@ -75,20 +75,17 @@
   color: $text-color--light-side;
   text-decoration: none;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    left: calc(100% + 11px);
-    width: 25px;
-    height: 12px;
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
+
+.categories__link-arrow {
+  position: absolute;
+  top: 21px;
+  left: calc(100% + 11px);
+  width: 25px;
+  height: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -154,13 +151,13 @@
     border: none;
     font-size: 20px;
     line-height: 20px;
+  }
 
-    &::after {
-      top: 4px;
-      left: calc(100% + 23px);
-      width: 25px;
-      height: 12px;
-    }
+  .categories__link-arrow {
+    top: 4px;
+    left: calc(100% + 23px);
+    width: 25px;
+    height: 12px;
   }
 }
 
