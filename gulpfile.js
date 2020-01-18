@@ -27,8 +27,8 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename({ 
-      suffix: ".min" 
+    .pipe(rename({
+      suffix: ".min"
     }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
