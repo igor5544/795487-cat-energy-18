@@ -1,6 +1,6 @@
 objectFitImages();
 
-let headerToggle = document.querySelector('.header__toggle-btn'),
+var headerToggle = document.querySelector('.header__toggle-btn'),
     toggleIco = document.querySelector('.header__toggle'),
     mainNav = document.querySelector('.main-nav');
 
@@ -13,7 +13,7 @@ headerToggle.addEventListener('click', function () {
 });
 
 function initMap() {
-    let opt = {
+    var opt = {
         center: { lat: 59.9389, lng: 30.3231 },
         zoom: 16.6,
         disableDefaultUI: true,
@@ -29,9 +29,9 @@ function initMap() {
         opt.zoom = 17;
     }
 
-    let map = new google.maps.Map(document.querySelector('.contacts__google-map'), opt);
+    var map = new google.maps.Map(document.querySelector('.contacts__google-map'), opt);
 
-    let marker = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         position: { lat: 59.938824, lng: 30.3231 },
         map: map,
         icon: {
