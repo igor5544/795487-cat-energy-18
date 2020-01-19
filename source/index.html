@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -72,35 +74,35 @@
 
     <section class="сategories">
 
-      <div class="categories__wrapper container">
+      <div class="сategories__wrapper container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="сategories__list">
-          <li class="categories__item categories__item--slim">
-            <svg class="categories__ico categories__ico--slim" width="35" height="49">
+          <li class="сategories__item сategories__item--slim">
+            <svg class="сategories__ico сategories__ico--slim" width="35" height="49">
               <use xlink:href="#icon-cat-slim"></use>
             </svg>
-            <h3 class="categories__title">Похудение</h3>
-            <p class="categories__text main-text">
+            <h3 class="сategories__title">Похудение</h3>
+            <p class="сategories__text main-text">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
               Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a href="catalog.html#slim" class="categories__link">Каталог Slim
-              <svg class="categories__link-arrow" width="25" height="12">
+            <a href="catalog.html#slim" class="сategories__link">Каталог Slim
+              <svg class="сategories__link-arrow" width="25" height="12">
                 <use xlink:href="#icon-right-arrow-long"></use>
               </svg>
             </a>
           </li>
-          <li class="categories__item categories__item--mass">
-            <svg class="categories__ico categories__ico--mass" width="25" height="12">
+          <li class="сategories__item сategories__item--mass">
+            <svg class="сategories__ico сategories__ico--mass" width="25" height="12">
               <use xlink:href="#icon-cat-pro"></use>
             </svg>
-            <h3 class="categories__title">Набор массы</h3>
-            <p class="categories__text categories__text--short main-text">
+            <h3 class="сategories__title">Набор массы</h3>
+            <p class="сategories__text сategories__text--short main-text">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a href="catalog.html#pro" class="categories__link">Каталог pro
-              <svg class="categories__link-arrow" width="25" height="12">
+            <a href="catalog.html#pro" class="сategories__link">Каталог pro
+              <svg class="сategories__link-arrow" width="25" height="12">
                 <use xlink:href="#icon-right-arrow-long"></use>
               </svg>
             </a>
@@ -202,7 +204,7 @@
             <button type="button" class="result__btn">
               Было
             </button>
-            <div class="result__range-bar"><button class="result__range-trigger"></button></div>
+            <div class="result__range-bar"><button class="result__range-trigger" aria-label="Ползунок, промежуток прогресса"></button></div>
             <button type="button" class="result__btn">
               Стало
             </button>

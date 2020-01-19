@@ -1,15 +1,15 @@
 objectFitImages();
 
-var headerToggle = document.querySelector('.header__toggle-btn'),
-    toggleIco = document.querySelector('.header__toggle'),
-    mainNav = document.querySelector('.main-nav');
+var headerToggle = document.querySelector(".header__toggle-btn"),
+    toggleIco = document.querySelector(".header__toggle"),
+    mainNav = document.querySelector(".main-nav");
 
-toggleIco.classList.remove('header__toggle--nojs');
-mainNav.classList.remove('main-nav--nojs');
+toggleIco.classList.remove("header__toggle--nojs");
+mainNav.classList.remove("main-nav--nojs");
 
-headerToggle.addEventListener('click', function () {
-    toggleIco.classList.toggle('header__toggle--closed');
-    mainNav.classList.toggle('main-nav--closed');
+headerToggle.addEventListener("click", function () {
+    toggleIco.classList.toggle("header__toggle--closed");
+    mainNav.classList.toggle("main-nav--closed");
 });
 
 function initMap() {
@@ -29,16 +29,16 @@ function initMap() {
         opt.zoom = 17;
     }
 
-    var map = new google.maps.Map(document.querySelector('.contacts__google-map'), opt);
+    var map = new google.maps.Map(document.querySelector(".contacts__google-map"), opt);
 
     var marker = new google.maps.Marker({
         position: { lat: 59.938824, lng: 30.3231 },
         map: map,
         icon: {
-            url: 'img/map-pin.png',
+            url: "img/map-pin.png",
             scaledSize: new google.maps.Size(62, 53)
         },
-        title: 'ул. Большая Конюшенная, д. 19/8 Санкт-Петербург',
+        title: "ул. Большая Конюшенная, д. 19/8 Санкт-Петербург",
     })
 
     if (window.innerWidth >= 768) {

@@ -7,7 +7,7 @@
   @include reset-list;
 }
 
-.categories__item {
+.сategories__item {
   position: relative;
   padding: 30px 22px 19px 20px;
   margin-top: 20px;
@@ -29,7 +29,7 @@
   }
 }
 
-.categories__ico {
+.сategories__ico {
   position: absolute;
 
   &--slim {
@@ -47,7 +47,7 @@
   }
 }
 
-.categories__title {
+.сategories__title {
   padding-left: 71px;
   margin: 0;
   margin-bottom: 29px;
@@ -57,13 +57,13 @@
   text-transform: uppercase;
 }
 
-.categories__text {
+.сategories__text {
   padding-right: 8px;
   border-bottom: 1px solid $border-color--dark;
   padding-bottom: 23px;
 }
 
-.categories__link {
+.сategories__link {
   display: inline-block;
   position: relative;
   max-width: max-content;
@@ -80,7 +80,7 @@
   }
 }
 
-.categories__link-arrow {
+.сategories__link-arrow {
   position: absolute;
   top: 21px;
   left: calc(100% + 11px);
@@ -94,7 +94,7 @@
     padding-bottom: 22px;
   }
 
-  .categories__item {
+  .сategories__item {
     padding-top: 76px;
     padding-bottom: 58px;
     padding-left: 52px;
@@ -112,7 +112,7 @@
     }
   }
 
-  .categories__ico {
+  .сategories__ico {
     &--slim {
       top: 80px;
       left: 475px;
@@ -128,7 +128,7 @@
     }
   }
 
-  .categories__title {
+  .сategories__title {
     max-width: 390px;
     padding-left: 0;
     margin-bottom: 26px;
@@ -136,7 +136,7 @@
     line-height: 37px;
   }
 
-  .categories__text {
+  .сategories__text {
     border: none;
     max-width: 382px;
     margin-bottom: 32px;
@@ -146,14 +146,14 @@
     }
   }
 
-  .categories__link {
+  .сategories__link {
     padding-top: 0;
     border: none;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .categories__link-arrow {
+  .сategories__link-arrow {
     top: 4px;
     left: calc(100% + 23px);
     width: 25px;
@@ -172,7 +172,7 @@
     flex-wrap: wrap;
   }
 
-  .categories__item {
+  .сategories__item {
     width: 570px;
     min-height: 372px;
     padding-bottom: 58px;
@@ -195,7 +195,7 @@
     }
   }
 
-  .categories__ico {
+  .сategories__ico {
     &--slim {
       top: 41px;
       left: 65px;
@@ -211,12 +211,12 @@
     }
   }
 
-  .categories__title {
+  .сategories__title {
     padding-left: 162px;
     margin-bottom: 74px;
   }
 
-  .categories__text {
+  .сategories__text {
     max-width: 475px;
     margin-bottom: 8px;
   }
